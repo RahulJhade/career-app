@@ -29,7 +29,7 @@ The system is built on a **Stacking Ensemble** of industry-grade gradient boosti
 ## 🚀 Demo
 
 ```
-http://localhost:5000
+https://career-app-fqr4.onrender.com
 ```
 
 Students fill out a profile form → the model processes 126 engineered features → Top-3 career roles are returned instantly with % confidence scores.
