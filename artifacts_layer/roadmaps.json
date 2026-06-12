@@ -1,0 +1,930 @@
+{
+  "Data Scientist / ML / AI Engineer": {
+    "skills": [
+      "Python",
+      "Statistics & Math",
+      "Pandas & NumPy",
+      "Scikit-learn",
+      "Deep Learning (TensorFlow/PyTorch)",
+      "MLflow / Model Registry",
+      "SQL & Data Wrangling",
+      "Cloud ML (AWS SageMaker / GCP Vertex)"
+    ],
+    "certs": [
+      "Google Professional ML Engineer",
+      "AWS Certified ML Specialty",
+      "Coursera ML Specialization (Andrew Ng)",
+      "TensorFlow Developer Certificate"
+    ],
+    "projects": [
+      "Build a classification model end-to-end",
+      "Kaggle competition (top 20%)",
+      "Deploy an ML API on cloud",
+      "Time series forecasting project"
+    ],
+    "timeline": {
+      "3_months": "Python + Stats + Sklearn basics",
+      "6_months": "Deep learning + end-to-end project",
+      "12_months": "Cloud deployment + specialization cert"
+    }
+  },
+  "Data & Analytics Engineer": {
+    "skills": [
+      "SQL (Advanced)",
+      "Python",
+      "Apache Spark",
+      "dbt (data build tool)",
+      "Airflow / Prefect",
+      "Data Warehousing (Snowflake/BigQuery)",
+      "Kafka",
+      "Cloud Platforms (AWS/GCP)"
+    ],
+    "certs": [
+      "dbt Certified Developer",
+      "Google Professional Data Engineer",
+      "AWS Certified Data Analytics",
+      "Databricks Data Engineer Associate"
+    ],
+    "projects": [
+      "Build an ETL pipeline with Airflow",
+      "Streaming pipeline with Kafka",
+      "Data warehouse on Snowflake/BigQuery",
+      "dbt transformation project"
+    ],
+    "timeline": {
+      "3_months": "SQL mastery + Python + basic pipelines",
+      "6_months": "Spark + Airflow + cloud warehouse",
+      "12_months": "Streaming + full data platform project"
+    }
+  },
+  "Backend Engineer": {
+    "skills": [
+      "Python / Java / Node.js",
+      "REST API Design",
+      "Databases (PostgreSQL, MongoDB)",
+      "Docker & Kubernetes",
+      "Microservices Architecture",
+      "Redis / Caching",
+      "System Design",
+      "CI/CD (GitHub Actions)"
+    ],
+    "certs": [
+      "AWS Developer Associate",
+      "Oracle Java Certification",
+      "Docker Certified Associate",
+      "Linux Foundation CKA"
+    ],
+    "projects": [
+      "Build a REST API with auth & rate limiting",
+      "Microservices with Docker Compose",
+      "System design: design Twitter/URL shortener",
+      "Deploy app on AWS ECS"
+    ],
+    "timeline": {
+      "3_months": "One language deeply + REST API + DB",
+      "6_months": "Docker + microservices + CI/CD",
+      "12_months": "System design + cloud deployment + open source contribution"
+    }
+  },
+  "Cloud Engineer & Platform/SRE": {
+    "skills": [
+      "AWS / Azure / GCP (at least one deep)",
+      "Terraform / IaC",
+      "Kubernetes & Helm",
+      "Docker",
+      "CI/CD Pipelines",
+      "Monitoring (Prometheus, Grafana)",
+      "Linux & Bash Scripting",
+      "Networking Fundamentals"
+    ],
+    "certs": [
+      "AWS Solutions Architect Associate",
+      "CKA (Certified Kubernetes Admin)",
+      "HashiCorp Terraform Associate",
+      "Google Professional Cloud Architect"
+    ],
+    "projects": [
+      "Deploy a 3-tier app on AWS with Terraform",
+      "Kubernetes cluster setup & deployment",
+      "Full CI/CD pipeline with GitHub Actions",
+      "Infrastructure monitoring dashboard"
+    ],
+    "timeline": {
+      "3_months": "AWS fundamentals + Linux + Terraform basics",
+      "6_months": "Kubernetes + CI/CD + first cloud cert",
+      "12_months": "Multi-cloud + SRE practices + advanced cert"
+    }
+  },
+  "DevOps Engineer": {
+    "skills": [
+      "Docker & Kubernetes",
+      "CI/CD (Jenkins/GitHub Actions/GitLab)",
+      "Terraform / Ansible",
+      "Linux & Shell Scripting",
+      "Cloud (AWS/Azure)",
+      "Monitoring (ELK Stack, Grafana)",
+      "Git & GitOps",
+      "Security basics (DevSecOps)"
+    ],
+    "certs": [
+      "AWS DevOps Engineer Professional",
+      "CKA",
+      "HashiCorp Terraform Associate",
+      "GitLab Certified CI/CD Specialist"
+    ],
+    "projects": [
+      "Full CI/CD pipeline from scratch",
+      "Infrastructure as Code with Terraform",
+      "Container orchestration with K8s",
+      "Automated monitoring + alerting setup"
+    ],
+    "timeline": {
+      "3_months": "Docker + Linux + Git + basic CI/CD",
+      "6_months": "Kubernetes + Terraform + cloud",
+      "12_months": "Full DevOps pipeline + professional cert"
+    }
+  },
+  "Security Operations Analyst": {
+    "skills": [
+      "SIEM Tools (Splunk/QRadar)",
+      "Incident Response",
+      "Network Forensics",
+      "Threat Intelligence",
+      "Log Analysis",
+      "Python (for automation)",
+      "MITRE ATT&CK Framework",
+      "Vulnerability Management"
+    ],
+    "certs": [
+      "CompTIA Security+",
+      "CompTIA CySA+",
+      "Splunk Core Certified User",
+      "CEH (Certified Ethical Hacker)"
+    ],
+    "projects": [
+      "Set up a SIEM lab with Splunk",
+      "Incident response tabletop exercise",
+      "Threat hunting with MITRE ATT&CK",
+      "Build a log analysis pipeline"
+    ],
+    "timeline": {
+      "3_months": "Security+ cert + networking basics + SIEM intro",
+      "6_months": "SIEM deep dive + incident response + CTF",
+      "12_months": "CySA+ cert + threat hunting + specialization"
+    }
+  },
+  "Penetration Tester": {
+    "skills": [
+      "Linux (Kali)",
+      "Burp Suite",
+      "Metasploit",
+      "Network Scanning (Nmap)",
+      "Web App Pentesting (OWASP Top 10)",
+      "Python / Bash scripting",
+      "Active Directory attacks",
+      "Report writing"
+    ],
+    "certs": [
+      "eJPT (eLearnSecurity)",
+      "CompTIA PenTest+",
+      "OSCP (Offensive Security Certified Professional)",
+      "CEH"
+    ],
+    "projects": [
+      "TryHackMe / HackTheBox (50+ rooms)",
+      "CTF competitions",
+      "Bug bounty on HackerOne",
+      "Build a pentest lab with VMs"
+    ],
+    "timeline": {
+      "3_months": "Linux + networking + TryHackMe beginner paths",
+      "6_months": "eJPT cert + web app hacking + HackTheBox",
+      "12_months": "OSCP prep + advanced exploits + bug bounty"
+    }
+  },
+  "Cybersecurity & Cloud Security Engineer": {
+    "skills": [
+      "Cloud Security (AWS Security Hub / Azure Defender)",
+      "IAM & Zero Trust",
+      "CSPM Tools",
+      "Container Security",
+      "SIEM & SOAR",
+      "Compliance (SOC2, ISO27001)",
+      "Threat Modelling",
+      "DevSecOps"
+    ],
+    "certs": [
+      "AWS Security Specialty",
+      "CCSP (Certified Cloud Security Professional)",
+      "CompTIA Security+",
+      "ISC2 CISSP"
+    ],
+    "projects": [
+      "Secure a cloud environment (misconfig audit)",
+      "Implement Zero Trust architecture",
+      "Automate compliance checks with scripts",
+      "Build a cloud SIEM pipeline"
+    ],
+    "timeline": {
+      "3_months": "Security+ + cloud fundamentals + IAM deep dive",
+      "6_months": "Cloud security tools + CCSP prep + DevSecOps",
+      "12_months": "CCSP cert + advanced cloud security project"
+    }
+  },
+  "GRC Analyst": {
+    "skills": [
+      "Risk Management Frameworks (NIST, ISO 27001)",
+      "Compliance (GDPR, SOC2, HIPAA)",
+      "Risk Assessment",
+      "Audit & Documentation",
+      "Business Continuity Planning",
+      "Policy Writing",
+      "Vendor Risk Management",
+      "Data Privacy"
+    ],
+    "certs": [
+      "CISA (Certified Information Systems Auditor)",
+      "ISO 27001 Lead Implementer",
+      "CompTIA Security+",
+      "CRISC"
+    ],
+    "projects": [
+      "Conduct a mock NIST CSF assessment",
+      "Write an information security policy",
+      "Third-party vendor risk assessment",
+      "GDPR compliance checklist project"
+    ],
+    "timeline": {
+      "3_months": "Security+ + GRC fundamentals + framework study",
+      "6_months": "ISO 27001 + compliance tools + CISA prep",
+      "12_months": "CISA cert + full GRC program design"
+    }
+  },
+  "Full-Stack Developer": {
+    "skills": [
+      "HTML/CSS/JavaScript",
+      "React or Angular (Frontend)",
+      "Node.js or Django (Backend)",
+      "REST APIs & GraphQL",
+      "PostgreSQL / MongoDB",
+      "Docker basics",
+      "Git & CI/CD",
+      "Testing (Jest, Selenium)"
+    ],
+    "certs": [
+      "Meta Front-End Developer (Coursera)",
+      "AWS Developer Associate",
+      "MongoDB Associate Developer",
+      "FreeCodeCamp Full Stack"
+    ],
+    "projects": [
+      "Build a full-stack CRUD app",
+      "E-commerce or SaaS clone",
+      "Real-time chat with WebSockets",
+      "Deploy on Vercel + Railway"
+    ],
+    "timeline": {
+      "3_months": "HTML/CSS/JS + React basics + simple REST API",
+      "6_months": "Full MERN/Django stack + DB + deployment",
+      "12_months": "Complex app + testing + CI/CD + cloud"
+    }
+  },
+  "Frontend Engineer": {
+    "skills": [
+      "HTML5 / CSS3 / JavaScript (ES6+)",
+      "React / Next.js",
+      "TypeScript",
+      "State Management (Redux/Zustand)",
+      "REST APIs & GraphQL",
+      "Testing (Jest, Cypress)",
+      "Performance Optimization",
+      "Accessibility (WCAG)"
+    ],
+    "certs": [
+      "Meta Front-End Developer",
+      "Google UX Design Certificate",
+      "AWS Cloud Practitioner",
+      "FreeCodeCamp Responsive Web Design"
+    ],
+    "projects": [
+      "Build a React SPA with routing & state",
+      "Clone a popular UI (Airbnb, Spotify)",
+      "Accessible component library",
+      "Performance-optimized portfolio"
+    ],
+    "timeline": {
+      "3_months": "HTML/CSS/JS fundamentals + React basics",
+      "6_months": "Next.js + TypeScript + testing",
+      "12_months": "Full frontend architecture + performance + open source"
+    }
+  },
+  "Mobile Application Developer": {
+    "skills": [
+      "Flutter or Kotlin (Android) or Swift (iOS)",
+      "REST API integration",
+      "State Management (BLoC/Provider for Flutter)",
+      "Firebase / Backend integration",
+      "UI/UX for Mobile",
+      "App Store deployment",
+      "Testing (Unit + Widget)",
+      "Push Notifications"
+    ],
+    "certs": [
+      "Google Associate Android Developer",
+      "Flutter Certification (Udemy/Coursera)",
+      "Apple Developer Program",
+      "Firebase Certified Developer"
+    ],
+    "projects": [
+      "Build and publish an Android/iOS app",
+      "Clone a popular app (WhatsApp/Instagram)",
+      "App with Firebase auth + Firestore",
+      "Cross-platform app with Flutter"
+    ],
+    "timeline": {
+      "3_months": "Flutter or Kotlin basics + simple UI app",
+      "6_months": "Firebase + API integration + published app",
+      "12_months": "Complex app + testing + app store launch"
+    }
+  },
+  "QA & Automation Test Engineer": {
+    "skills": [
+      "Selenium WebDriver",
+      "API Testing (Postman/RestAssured)",
+      "Test Frameworks (JUnit/TestNG/PyTest)",
+      "CI/CD Integration",
+      "Performance Testing (JMeter)",
+      "BDD (Cucumber)",
+      "SQL for test data",
+      "Test Planning & Strategy"
+    ],
+    "certs": [
+      "ISTQB Foundation Level",
+      "Selenium WebDriver with Java (Udemy)",
+      "Postman API Fundamentals",
+      "AWS Cloud Practitioner"
+    ],
+    "projects": [
+      "Selenium automation framework from scratch",
+      "API test suite with RestAssured/Postman",
+      "Performance test with JMeter",
+      "CI/CD pipeline with automated tests"
+    ],
+    "timeline": {
+      "3_months": "ISTQB + manual testing + Selenium basics",
+      "6_months": "Full automation framework + API testing",
+      "12_months": "Performance testing + CI/CD integration + ISTQB Advanced"
+    }
+  },
+  "Database Administrator": {
+    "skills": [
+      "PostgreSQL / MySQL / Oracle",
+      "Query Optimization & Indexing",
+      "Backup & Recovery",
+      "Replication & High Availability",
+      "Database Security",
+      "MongoDB (NoSQL)",
+      "Performance Tuning",
+      "Shell Scripting for DBA tasks"
+    ],
+    "certs": [
+      "Oracle Database SQL Certified Associate",
+      "PostgreSQL Professional Certificate",
+      "MongoDB DBA Associate",
+      "AWS Database Specialty"
+    ],
+    "projects": [
+      "Set up PostgreSQL with replication",
+      "Query optimization challenge (slow query fix)",
+      "Automated backup & monitoring scripts",
+      "Database migration project"
+    ],
+    "timeline": {
+      "3_months": "SQL mastery + PostgreSQL setup + indexing",
+      "6_months": "Replication + backup + performance tuning",
+      "12_months": "Cloud DB + cert + full DBA project"
+    }
+  },
+  "Embedded Systems Engineer": {
+    "skills": [
+      "C / C++ (embedded)",
+      "Microcontrollers (Arduino, STM32, ESP32)",
+      "RTOS (FreeRTOS)",
+      "Firmware Debugging (GDB, JTAG)",
+      "Communication Protocols (UART, SPI, I2C)",
+      "PCB Basics",
+      "Power Management",
+      "Linux Kernel basics"
+    ],
+    "certs": [
+      "ARM Accredited Engineer",
+      "Coursera Embedded Systems Specialization",
+      "NVIDIA Jetson AI Cert",
+      "Linux Foundation Embedded Linux"
+    ],
+    "projects": [
+      "Build a sensor data logger",
+      "RTOS-based task scheduler",
+      "IoT device with MQTT + cloud",
+      "Custom PCB + firmware project"
+    ],
+    "timeline": {
+      "3_months": "C/C++ + Arduino basics + GPIO/protocols",
+      "6_months": "STM32 + FreeRTOS + debugging tools",
+      "12_months": "IoT project + Linux embedded + cert"
+    }
+  },
+  "UX Designer": {
+    "skills": [
+      "Figma / Adobe XD",
+      "User Research Methods",
+      "Wireframing & Prototyping",
+      "Usability Testing",
+      "Information Architecture",
+      "Design Systems",
+      "Accessibility (WCAG)",
+      "Basic HTML/CSS"
+    ],
+    "certs": [
+      "Google UX Design Certificate (Coursera)",
+      "Interaction Design Foundation Cert",
+      "Nielsen Norman Group UX Cert",
+      "Adobe Certified Professional"
+    ],
+    "projects": [
+      "Full UX case study (research to prototype)",
+      "Redesign an existing app",
+      "Design system in Figma",
+      "Usability test with 5 real users"
+    ],
+    "timeline": {
+      "3_months": "Figma basics + UX process + first case study",
+      "6_months": "User research + prototyping + Google UX cert",
+      "12_months": "Full portfolio (3 case studies) + internship"
+    }
+  },
+  "Associate Product Manager": {
+    "skills": [
+      "Product Strategy & Roadmapping",
+      "User Story Writing",
+      "Agile / Scrum",
+      "Data Analysis (SQL basics)",
+      "A/B Testing",
+      "Wireframing (Figma basics)",
+      "Stakeholder Communication",
+      "Competitive Analysis"
+    ],
+    "certs": [
+      "Product School Certificate",
+      "Coursera Product Management Specialization",
+      "Agile Scrum Master Certification",
+      "Google Analytics Certification"
+    ],
+    "projects": [
+      "Build a product PRD (Product Requirements Doc)",
+      "Competitive analysis report",
+      "User interview + insight synthesis",
+      "Mock product roadmap presentation"
+    ],
+    "timeline": {
+      "3_months": "Product fundamentals + Agile + user research",
+      "6_months": "PRD writing + roadmapping + analytics",
+      "12_months": "PM certificate + portfolio + internship"
+    }
+  },
+  "Game Developer": {
+    "skills": [
+      "Unity (C#) or Unreal (C++)",
+      "Game Physics & Math",
+      "2D/3D Asset Integration",
+      "Shaders & Graphics Basics",
+      "Game AI (pathfinding, state machines)",
+      "Version Control for game assets",
+      "Performance Optimization",
+      "Mobile game deployment"
+    ],
+    "certs": [
+      "Unity Certified Associate",
+      "Unreal Online Learning Certificates",
+      "Coursera Game Design Specialization",
+      "Google Play Academy"
+    ],
+    "projects": [
+      "Complete a 2D platformer game",
+      "3D game with physics & AI",
+      "Publish on itch.io or Google Play",
+      "Game jam participation (Ludum Dare)"
+    ],
+    "timeline": {
+      "3_months": "Unity/Unreal basics + first simple game",
+      "6_months": "2D game published + physics + AI basics",
+      "12_months": "3D game + mobile publishing + game jam"
+    }
+  },
+  "MLOps Engineer": {
+    "skills": [
+      "MLflow / Weights & Biases",
+      "Docker & Kubernetes for ML",
+      "CI/CD for ML pipelines",
+      "Feature Stores (Feast)",
+      "Model Monitoring (Evidently AI)",
+      "Cloud ML Platforms (SageMaker/Vertex)",
+      "Python",
+      "Data Version Control (DVC)"
+    ],
+    "certs": [
+      "AWS ML Specialty",
+      "Google Professional ML Engineer",
+      "DataTalks MLOps Zoomcamp",
+      "Databricks ML Professional"
+    ],
+    "projects": [
+      "CI/CD pipeline for ML model",
+      "Model monitoring dashboard",
+      "Feature store setup with Feast",
+      "End-to-end ML platform on cloud"
+    ],
+    "timeline": {
+      "3_months": "MLflow + Docker + basic CI/CD for ML",
+      "6_months": "Kubernetes + model monitoring + cloud ML",
+      "12_months": "Full MLOps platform + professional cert"
+    }
+  },
+  "Systems Software Engineer": {
+    "skills": [
+      "C / C++ / Rust",
+      "Operating Systems internals",
+      "Compiler concepts",
+      "Memory Management",
+      "Multithreading & Concurrency",
+      "Linux Systems Programming",
+      "Performance Profiling",
+      "Network Programming"
+    ],
+    "certs": [
+      "Linux Foundation System Administrator",
+      "C++ Institute CPA",
+      "Coursera Computer Architecture",
+      "Red Hat RHCSA"
+    ],
+    "projects": [
+      "Build a mini shell in C",
+      "Memory allocator implementation",
+      "Multithreaded web server",
+      "Linux kernel module"
+    ],
+    "timeline": {
+      "3_months": "C/C++ deep dive + Linux internals + systems calls",
+      "6_months": "Concurrency + OS project + performance tools",
+      "12_months": "Kernel programming + compiler project + open source"
+    }
+  },
+  "Cloud Architect": {
+    "skills": [
+      "AWS / Azure / GCP (advanced)",
+      "Enterprise Architecture Patterns",
+      "Microservices & Serverless",
+      "Cost Optimization",
+      "Security Architecture",
+      "Disaster Recovery",
+      "Multi-cloud Strategy",
+      "Well-Architected Framework"
+    ],
+    "certs": [
+      "AWS Solutions Architect Professional",
+      "Google Professional Cloud Architect",
+      "Azure Solutions Architect Expert",
+      "TOGAF (Enterprise Architecture)"
+    ],
+    "projects": [
+      "Design a multi-tier cloud architecture",
+      "Well-Architected Framework review",
+      "Cost optimization analysis & implementation",
+      "Multi-region DR setup"
+    ],
+    "timeline": {
+      "3_months": "AWS SAA cert + architecture patterns + HA design",
+      "6_months": "Multi-cloud + security + cost optimization",
+      "12_months": "SAP cert + full enterprise architecture project"
+    }
+  },
+  "Infrastructure Engineer": {
+    "skills": [
+      "Linux Server Administration",
+      "Networking (TCP/IP, DNS, DHCP)",
+      "Virtualization (VMware/KVM)",
+      "Storage Systems",
+      "Automation (Ansible)",
+      "Monitoring (Nagios/Zabbix)",
+      "Capacity Planning",
+      "Cloud basics"
+    ],
+    "certs": [
+      "Linux+ CompTIA",
+      "CCNA (Cisco)",
+      "VMware VCP",
+      "Red Hat RHCE"
+    ],
+    "projects": [
+      "Set up a Linux server cluster",
+      "Ansible playbooks for infra automation",
+      "Network monitoring dashboard",
+      "Virtualization lab with KVM"
+    ],
+    "timeline": {
+      "3_months": "Linux admin + networking basics + virtualization",
+      "6_months": "Ansible + monitoring + CCNA prep",
+      "12_months": "Cloud infra + RHCE cert + automation project"
+    }
+  },
+  "Platform Engineer": {
+    "skills": [
+      "Kubernetes (advanced)",
+      "Service Mesh (Istio)",
+      "Internal Developer Platforms",
+      "GitOps (ArgoCD/Flux)",
+      "Terraform",
+      "Observability stack",
+      "API Gateway",
+      "Developer Experience tooling"
+    ],
+    "certs": [
+      "CKA / CKAD",
+      "HashiCorp Terraform Associate",
+      "AWS Solutions Architect Associate",
+      "Istio Certified Associate"
+    ],
+    "projects": [
+      "Internal developer platform (Backstage)",
+      "GitOps workflow with ArgoCD",
+      "Service mesh with Istio",
+      "Self-service infra portal"
+    ],
+    "timeline": {
+      "3_months": "K8s deep dive + Helm + basic GitOps",
+      "6_months": "ArgoCD + Terraform + service mesh",
+      "12_months": "Full IDP + CKA cert + platform engineering"
+    }
+  },
+  "Solutions Architect": {
+    "skills": [
+      "Cloud Architecture (AWS/Azure/GCP)",
+      "Solution Design & RFP responses",
+      "Stakeholder Management",
+      "Cost-Benefit Analysis",
+      "Security & Compliance",
+      "API & Integration Patterns",
+      "Pre-sales Technical Skills",
+      "Documentation"
+    ],
+    "certs": [
+      "AWS Solutions Architect Professional",
+      "Azure Solutions Architect Expert",
+      "TOGAF",
+      "Google Professional Cloud Architect"
+    ],
+    "projects": [
+      "Architecture design document for a use case",
+      "Cloud migration strategy paper",
+      "RFP response simulation",
+      "Reference architecture diagram"
+    ],
+    "timeline": {
+      "3_months": "Cloud fundamentals + architecture patterns + SAA cert",
+      "6_months": "Advanced architecture + pre-sales skills + SAP prep",
+      "12_months": "SAP cert + full solution proposal project"
+    }
+  },
+  "Application Support Engineer": {
+    "skills": [
+      "SQL & Database Querying",
+      "Log Analysis & Monitoring",
+      "Scripting (Python/Bash)",
+      "ITSM Tools (ServiceNow/Jira)",
+      "API troubleshooting (Postman)",
+      "Linux basics",
+      "Incident Management",
+      "Documentation"
+    ],
+    "certs": [
+      "ITIL Foundation",
+      "CompTIA A+",
+      "ServiceNow CSA",
+      "AWS Cloud Practitioner"
+    ],
+    "projects": [
+      "Build an incident tracking system",
+      "Log monitoring dashboard",
+      "Automated alert + escalation script",
+      "Knowledge base documentation project"
+    ],
+    "timeline": {
+      "3_months": "SQL + Linux + ITIL + ticketing tools",
+      "6_months": "Scripting + monitoring + ITSM cert",
+      "12_months": "Cloud basics + full incident management project"
+    }
+  },
+  "Performance Test Engineer": {
+    "skills": [
+      "JMeter / Gatling / Locust",
+      "Load & Stress Testing",
+      "Performance Profiling",
+      "APM Tools (Dynatrace/New Relic)",
+      "SQL for performance analysis",
+      "Scripting (Python/Groovy)",
+      "CI/CD integration",
+      "Bottleneck Analysis"
+    ],
+    "certs": [
+      "ISTQB Performance Testing",
+      "JMeter certification (Blazemeter)",
+      "Dynatrace Associate",
+      "AWS Cloud Practitioner"
+    ],
+    "projects": [
+      "Full JMeter load test suite",
+      "Performance regression testing in CI/CD",
+      "APM dashboard setup",
+      "Bottleneck analysis report"
+    ],
+    "timeline": {
+      "3_months": "JMeter basics + load testing concepts + ISTQB",
+      "6_months": "Advanced JMeter + APM tools + CI/CD integration",
+      "12_months": "Full performance framework + professional cert"
+    }
+  },
+  "Test Architect": {
+    "skills": [
+      "Test Strategy & Architecture",
+      "Automation Framework Design",
+      "CI/CD for QA",
+      "API & Contract Testing",
+      "Test Data Management",
+      "Performance Testing",
+      "Security Testing basics",
+      "Mentoring & Leadership"
+    ],
+    "certs": [
+      "ISTQB Advanced Test Manager",
+      "ISTQB Advanced Test Analyst",
+      "Certified Agile Tester",
+      "AWS Cloud Practitioner"
+    ],
+    "projects": [
+      "Design an enterprise test automation framework",
+      "Contract testing with Pact",
+      "Test data management system",
+      "Full QA pipeline with reporting"
+    ],
+    "timeline": {
+      "3_months": "ISTQB Foundation + framework design principles",
+      "6_months": "Advanced automation + CI/CD + ISTQB Advanced",
+      "12_months": "Enterprise QA architecture + Test Manager cert"
+    }
+  },
+  "Product Analyst": {
+    "skills": [
+      "SQL (Advanced)",
+      "Product Analytics Tools (Mixpanel/Amplitude)",
+      "A/B Testing & Statistics",
+      "Python / R for analysis",
+      "Dashboard creation (Tableau/Looker)",
+      "User Funnel Analysis",
+      "Cohort Analysis",
+      "Data Storytelling"
+    ],
+    "certs": [
+      "Google Analytics Certification",
+      "Mixpanel Certification",
+      "SQL for Data Analysis (Mode Analytics)",
+      "Product Analytics Certification"
+    ],
+    "projects": [
+      "Funnel drop-off analysis with recommendations",
+      "A/B test design + statistical analysis",
+      "Product health dashboard",
+      "User retention cohort analysis"
+    ],
+    "timeline": {
+      "3_months": "SQL + analytics tools + funnel analysis",
+      "6_months": "A/B testing + Python + dashboard building",
+      "12_months": "Full product analytics portfolio + cert"
+    }
+  },
+  "UI Designer": {
+    "skills": [
+      "Figma / Adobe XD / Sketch",
+      "Visual Design Principles (typography, colour, layout)",
+      "Design Systems & Component Libraries",
+      "Iconography & Illustration",
+      "Responsive Design",
+      "Motion & Micro-interactions",
+      "Handoff to Developers",
+      "Brand Identity"
+    ],
+    "certs": [
+      "Google UX Design Certificate",
+      "Adobe Certified Professional",
+      "Interaction Design Foundation",
+      "Figma Professional Certificate"
+    ],
+    "projects": [
+      "Full UI kit / design system in Figma",
+      "Mobile app visual redesign",
+      "Brand identity + style guide",
+      "Animated micro-interaction prototypes"
+    ],
+    "timeline": {
+      "3_months": "Figma + visual design fundamentals + first UI project",
+      "6_months": "Design system + motion + dev handoff",
+      "12_months": "Full portfolio (5 projects) + brand identity work"
+    }
+  },
+  "SOC Analyst": {
+    "skills": [
+      "SIEM (Splunk/Microsoft Sentinel)",
+      "Threat Detection & Triage",
+      "Log Analysis",
+      "Incident Response Playbooks",
+      "Threat Intelligence Feeds",
+      "Network Forensics",
+      "MITRE ATT&CK",
+      "Python for SOC automation"
+    ],
+    "certs": [
+      "CompTIA Security+",
+      "CompTIA CySA+",
+      "Splunk Core Certified User",
+      "Blue Team Level 1 (BTL1)"
+    ],
+    "projects": [
+      "Home SOC lab with Splunk/ELK",
+      "Threat hunting exercise with MITRE ATT&CK",
+      "Incident response playbook",
+      "SOC automation script (Python)"
+    ],
+    "timeline": {
+      "3_months": "Security+ + SOC basics + SIEM intro + TryHackMe SOC path",
+      "6_months": "Splunk cert + threat hunting + BTL1",
+      "12_months": "CySA+ + advanced detection + SOC automation"
+    }
+  },
+  "BI Analyst": {
+    "skills": [
+      "SQL (Advanced)",
+      "Power BI / Tableau / Looker",
+      "Data Modelling (Star/Snowflake schema)",
+      "DAX / MDX",
+      "Python/R for EDA",
+      "ETL basics",
+      "Stakeholder Reporting",
+      "Statistics"
+    ],
+    "certs": [
+      "Microsoft Power BI Data Analyst",
+      "Tableau Desktop Specialist",
+      "Google Data Analytics Certificate",
+      "dbt Certified Developer"
+    ],
+    "projects": [
+      "Executive KPI dashboard in Power BI",
+      "Sales analytics report in Tableau",
+      "Data model with star schema",
+      "Automated report distribution system"
+    ],
+    "timeline": {
+      "3_months": "SQL + Power BI/Tableau basics + first dashboard",
+      "6_months": "Advanced data modelling + Power BI cert",
+      "12_months": "Full BI portfolio + stakeholder reporting + dbt"
+    }
+  },
+  "Analytics Engineer": {
+    "skills": [
+      "dbt (data build tool)",
+      "SQL (Advanced)",
+      "Python",
+      "Data Warehousing (Snowflake/BigQuery/Redshift)",
+      "Airflow basics",
+      "Data Modelling",
+      "Data Quality & Testing",
+      "Version Control (Git)"
+    ],
+    "certs": [
+      "dbt Certified Developer",
+      "Google Professional Data Engineer",
+      "Snowflake SnowPro Core",
+      "Databricks Data Engineer"
+    ],
+    "projects": [
+      "dbt project with full transformation layer",
+      "Data quality testing framework",
+      "Snowflake warehouse setup + modelling",
+      "Metrics layer with dbt Semantic Layer"
+    ],
+    "timeline": {
+      "3_months": "SQL mastery + dbt basics + warehouse setup",
+      "6_months": "Advanced dbt + data quality + cloud warehouse",
+      "12_months": "Full analytics engineering project + dbt cert"
+    }
+  }
+}

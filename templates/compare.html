@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>CareerAI — Compare Roles</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#050811;--sf:#0d1117;--sf2:#161b22;--sf3:#1e2631;--bd:rgba(255,255,255,0.07);--tx:#e8edf5;--mt:#7d8997;--ac:#4f8ef7;--ac2:#a855f7;--ac3:#06d6a0;--dg:#ef4444;--wn:#f59e0b;--orb-opacity:1;}
+[data-theme="light"]{--bg:#f4f6fb;--sf:#ffffff;--sf2:#f0f2f7;--sf3:#e4e7ef;--bd:rgba(0,0,0,0.08);--tx:#1a1d26;--mt:#5a6270;--ac:#3b72d9;--ac2:#8b3fd9;--ac3:#059b75;--dg:#d93636;--wn:#d48a08;--orb-opacity:0.35;}
+[data-theme="light"] header{background:rgba(244,246,251,0.92)!important;box-shadow:0 2px 20px rgba(0,0,0,0.06);}
+[data-theme="light"] .logo{-webkit-text-fill-color:transparent;}
+[data-theme="light"] select{background:var(--sf2)!important;border-color:var(--bd)!important;color:var(--tx)!important;}
+.theme-toggle{background:var(--sf2);border:1px solid var(--bd);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s ease;font-size:17px;flex-shrink:0;}
+.theme-toggle:hover{border-color:rgba(79,142,247,0.4);transform:scale(1.08);box-shadow:0 0 16px rgba(79,142,247,0.15);}
+.theme-toggle .t-icon{transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1);}
+.theme-toggle .t-icon.spin{transform:rotate(360deg);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--tx);}
+.bgrid{position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(79,142,247,0.03)1px,transparent 1px),linear-gradient(90deg,rgba(79,142,247,0.03)1px,transparent 1px);background-size:48px 48px;pointer-events:none;}
+.w{position:relative;z-index:1;}
+header{padding:18px 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--bd);backdrop-filter:blur(10px);background:rgba(5,8,17,0.82);position:sticky;top:0;z-index:100;}
+.logo{font-family:"Syne",sans-serif;font-size:22px;font-weight:800;background:linear-gradient(135deg,var(--ac),var(--ac2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.navs{display:flex;gap:8px;}
+.nb{background:var(--sf2);border:1px solid var(--bd);color:var(--mt);padding:7px 14px;border-radius:8px;font-family:"DM Sans",sans-serif;font-size:13px;cursor:pointer;text-decoration:none;display:flex;align-items:center;gap:6px;transition:all 0.2s;}
+.nb:hover{color:var(--tx);border-color:rgba(79,142,247,0.3);}
+.nb.on{color:var(--ac);border-color:rgba(79,142,247,0.4);background:rgba(79,142,247,0.08);}
+main{max-width:1100px;margin:0 auto;padding:40px 48px 80px;}
+h2{font-family:"Syne",sans-serif;font-size:26px;font-weight:800;letter-spacing:-0.8px;margin-bottom:6px;}
+.sub{color:var(--mt);font-size:14px;margin-bottom:32px;}
+/* role selector */
+.sel-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px;}
+.sel-box{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:18px 20px;}
+.sel-box label{font-size:11px;color:var(--mt);text-transform:uppercase;letter-spacing:0.7px;font-weight:600;display:block;margin-bottom:8px;}
+.sel-box select{width:100%;background:var(--sf2);border:1px solid var(--bd);color:var(--tx);border-radius:8px;padding:9px 12px;font-family:"DM Sans",sans-serif;font-size:13px;outline:none;}
+.sel-box select:focus{border-color:var(--ac);}
+.cmp-btn{display:block;margin:0 auto 32px;background:linear-gradient(135deg,var(--ac),var(--ac2));color:white;border:none;padding:13px 40px;border-radius:10px;font-family:"Syne",sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:all 0.2s;}
+.cmp-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(79,142,247,0.4);}
+/* compare table */
+#cmpResult{display:none;}
+.cmp-header{display:grid;grid-template-columns:180px 1fr 1fr;gap:0;margin-bottom:0;}
+.ch-label{background:var(--sf2);padding:14px 18px;font-size:11px;color:var(--mt);text-transform:uppercase;letter-spacing:0.7px;font-weight:600;border:1px solid var(--bd);border-radius:10px 0 0 0;}
+.ch-role{padding:14px 18px;border:1px solid var(--bd);border-left:none;}
+.ch-role:last-child{border-radius:0 10px 0 0;}
+.ch-name{font-family:"Syne",sans-serif;font-size:15px;font-weight:700;margin-bottom:3px;}
+.ch-domain{font-size:11px;color:var(--mt);}
+.cmp-row{display:grid;grid-template-columns:180px 1fr 1fr;gap:0;}
+.cmp-row:last-child .cr-label{border-radius:0 0 0 10px;}
+.cmp-row:last-child .cr-val:last-child{border-radius:0 0 10px 0;}
+.cr-label{background:var(--sf2);padding:11px 18px;font-size:12px;color:var(--mt);border:1px solid var(--bd);border-top:none;border-right:none;}
+.cr-val{padding:11px 18px;font-size:13px;border:1px solid var(--bd);border-top:none;border-left:none;}
+.cr-val:last-child{border-left:none;}
+.cr-bar-wrap{display:flex;align-items:center;gap:10px;}
+.cr-bar{flex:1;height:5px;background:var(--sf3);border-radius:99px;overflow:hidden;}
+.cr-fill{height:100%;border-radius:99px;transition:width 0.8s ease;}
+.cr-num{font-size:12px;font-weight:600;min-width:28px;}
+.highlight{background:rgba(79,142,247,0.05);}
+.winner-cell{background:rgba(6,214,160,0.06);border-color:rgba(6,214,160,0.2)!important;}
+.demand-badge{display:inline-block;padding:2px 10px;border-radius:99px;font-size:11px;font-weight:700;}
+/* skills radar */
+.radar-section{margin-top:28px;background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:20px 24px;}
+.radar-section h4{font-family:"Syne",sans-serif;font-size:14px;font-weight:700;margin-bottom:16px;}
+.skill-compare-row{display:grid;grid-template-columns:140px 1fr 1fr;align-items:center;gap:12px;margin-bottom:9px;}
+.sc-label{font-size:11px;color:var(--mt);text-align:right;}
+.sc-bars{display:flex;flex-direction:column;gap:3px;}
+.sc-bar-row{display:flex;align-items:center;gap:7px;}
+.sc-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.sc-track{flex:1;height:5px;background:var(--sf3);border-radius:99px;overflow:hidden;}
+.sc-fill{height:100%;border-radius:99px;transition:width 0.8s ease;}
+footer{border-top:1px solid var(--bd);padding:24px 48px;color:var(--mt);font-size:12px;text-align:center;}
+@media(max-width:768px){header,main,footer{padding-left:16px;padding-right:16px;}.sel-grid{grid-template-columns:1fr;}.cmp-header,.cmp-row,.skill-compare-row{grid-template-columns:120px 1fr 1fr;}}
+</style>
+</head>
+<body>
+<div class="bgrid"></div>
+<div class="w">
+<header>
+  <div class="logo">CareerAI ✦</div>
+  <nav class="navs">
+    <a class="nb" href="/">🎯 Predict</a>
+    <a class="nb" href="/dashboard">📊 Analytics</a>
+    <a class="nb on" href="/compare">⚖️ Compare Roles</a>
+    <a class="nb" href="/progress">📈 Progress</a>
+  </nav>
+  <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle light/dark mode">
+    <span class="t-icon" id="themeIcon">🌙</span>
+  </button>
+</header>
+
+<main>
+  <h2>⚖️ Compare Career Roles</h2>
+  <p class="sub">Pick two roles side-by-side — see skill requirements, salary, demand, and how you'd need to grow for each.</p>
+
+  <div class="sel-grid">
+    <div class="sel-box">
+      <label>Role A</label>
+      <select id="roleA">{% for r in roles %}<option value="{{ r }}" {% if loop.index==1 %}selected{% endif %}>{{ r }}</option>{% endfor %}</select>
+    </div>
+    <div class="sel-box">
+      <label>Role B</label>
+      <select id="roleB">{% for r in roles %}<option value="{{ r }}" {% if loop.index==5 %}selected{% endif %}>{{ r }}</option>{% endfor %}</select>
+    </div>
+  </div>
+
+  <button class="cmp-btn" onclick="compare()">⚖️ Compare These Roles</button>
+
+  <div id="cmpResult"></div>
+</main>
+
+<footer>CareerAI — B.Tech Capstone Project · Career Prediction System</footer>
+</div>
+
+<script>
+(function initTheme(){
+  const saved=localStorage.getItem('careerai-theme');
+  if(saved==='light') document.documentElement.setAttribute('data-theme','light');
+})();
+function toggleTheme(){
+  const html=document.documentElement;
+  const icon=document.getElementById('themeIcon');
+  icon.classList.add('spin');
+  setTimeout(()=>icon.classList.remove('spin'),450);
+  if(html.getAttribute('data-theme')==='light'){
+    html.removeAttribute('data-theme');
+    localStorage.setItem('careerai-theme','dark');
+    icon.textContent='🌙';
+  } else {
+    html.setAttribute('data-theme','light');
+    localStorage.setItem('careerai-theme','light');
+    icon.textContent='☀️';
+  }
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  const icon=document.getElementById('themeIcon');
+  if(icon) icon.textContent=document.documentElement.getAttribute('data-theme')==='light'?'☀️':'🌙';
+});
+const profiles = {{ profiles|tojson }};
+const salaries = {{ salaries|tojson }};
+const domainColors = {"Software Engineering":"#3b82f6","Data & Artificial Intelligence":"#8b5cf6","Cybersecurity":"#ef4444","Cloud, DevOps & Platform Engineering":"#06b6d4","UI/UX & Product":"#f59e0b","Quality Assurance & Testing":"#10b981","Systems & Infrastructure":"#6366f1"};
+const demColors = {"Very High":"#10b981","High":"#3b82f6","Medium":"#f59e0b","Low":"#ef4444"};
+const SKILLS = [
+  {key:'programming_skill',label:'Programming'},
+  {key:'data_analytics_skill',label:'Data Analytics'},
+  {key:'data_science_ml_skill',label:'Data Science/ML'},
+  {key:'cloud_devops_skill',label:'Cloud/DevOps'},
+  {key:'cybersecurity_skill',label:'Cybersecurity'},
+  {key:'web_dev_skill',label:'Web Dev'},
+  {key:'ui_ux_design_skill',label:'UI/UX Design'},
+  {key:'system_design_score',label:'System Design'},
+  {key:'db_sql_skill',label:'Database/SQL'},
+  {key:'mobile_dev_skill',label:'Mobile Dev'},
+];
+
+function compare(){
+  const rA=document.getElementById('roleA').value;
+  const rB=document.getElementById('roleB').value;
+  const pA=profiles[rA]||{}, pB=profiles[rB]||{};
+  const sA=salaries[rA]||{}, sB=salaries[rB]||{};
+  const dA=document.querySelector('#roleA option:checked')?.dataset?.domain||'';
+
+  const rows = [
+    {label:'Domain', va: pA.__domain||rA, vb: pB.__domain||rB, type:'text'},
+    {label:'Avg CGPA',  va: pA.cgpa?.toFixed(1)||'—', vb: pB.cgpa?.toFixed(1)||'—', numA: pA.cgpa, numB: pB.cgpa, max:10, type:'bar'},
+    {label:'Avg Projects', va: pA.project_count?.toFixed(0)||'—', vb: pB.project_count?.toFixed(0)||'—', numA:pA.project_count, numB:pB.project_count, max:15, type:'bar'},
+    {label:'Avg Commits/90d', va: pA.github_commits_90d?.toFixed(0)||'—', vb: pB.github_commits_90d?.toFixed(0)||'—', numA:pA.github_commits_90d, numB:pB.github_commits_90d, max:300, type:'bar'},
+    {label:'Avg Certifications', va: pA.certifications_total?.toFixed(1)||'—', vb: pB.certifications_total?.toFixed(1)||'—', numA:pA.certifications_total, numB:pB.certifications_total, max:8, type:'bar'},
+    {label:'India Salary (LPA)', va: sA.india_lpa?`₹${sA.india_lpa[0]}–${sA.india_lpa[1]}`:'—', vb: sB.india_lpa?`₹${sB.india_lpa[0]}–${sB.india_lpa[1]}`:'—', numA:sA.india_lpa?sA.india_lpa[1]:0, numB:sB.india_lpa?sB.india_lpa[1]:0, max:50, type:'sal'},
+    {label:'Global Salary (USD)', va: sA.global_usd?`$${(sA.global_usd[0]/1000).toFixed(0)}k–$${(sA.global_usd[1]/1000).toFixed(0)}k`:'—', vb: sB.global_usd?`$${(sB.global_usd[0]/1000).toFixed(0)}k–$${(sB.global_usd[1]/1000).toFixed(0)}k`:'—', type:'text'},
+    {label:'Market Demand', va: sA.demand||'—', vb: sB.demand||'—', type:'demand'},
+  ];
+
+  const colA = '#4f8ef7', colB = '#a855f7';
+
+  let html = `<div class="cmp-header">
+    <div class="ch-label">Category</div>
+    <div class="ch-role"><div class="ch-name" style="color:${colA}">${rA}</div></div>
+    <div class="ch-role"><div class="ch-name" style="color:${colB}">${rB}</div></div>
+  </div>`;
+
+  rows.forEach((row,i)=>{
+    const even = i%2===0 ? ' highlight':'';
+    let cellA='', cellB='';
+    if(row.type==='bar'){
+      const pA2=((row.numA||0)/row.max*100).toFixed(0), pB2=((row.numB||0)/row.max*100).toFixed(0);
+      const win = row.numA>row.numB?'A':row.numB>row.numA?'B':'';
+      cellA=`<div class="cr-bar-wrap"><div class="cr-bar"><div class="cr-fill" style="width:${pA2}%;background:${colA}"></div></div><span class="cr-num" style="color:${win==='A'?'var(--ac3)':'var(--mt)'}">${row.va}${win==='A'?' ✓':''}</span></div>`;
+      cellB=`<div class="cr-bar-wrap"><div class="cr-bar"><div class="cr-fill" style="width:${pB2}%;background:${colB}"></div></div><span class="cr-num" style="color:${win==='B'?'var(--ac3)':'var(--mt)'}">${row.vb}${win==='B'?' ✓':''}</span></div>`;
+    } else if(row.type==='sal'){
+      const win = row.numA>row.numB?'A':row.numB>row.numA?'B':'';
+      cellA=`<span style="color:${win==='A'?'var(--ac3)':'var(--tx)'};">${row.va}${win==='A'?' 💰':''}</span>`;
+      cellB=`<span style="color:${win==='B'?'var(--ac3)':'var(--tx)'};">${row.vb}${win==='B'?' 💰':''}</span>`;
+    } else if(row.type==='demand'){
+      const ord={'Very High':4,'High':3,'Medium':2,'Low':1};
+      const win = (ord[row.va]||0)>(ord[row.vb]||0)?'A':(ord[row.vb]||0)>(ord[row.va]||0)?'B':'';
+      cellA=`<span class="demand-badge" style="background:${demColors[row.va]||'#666'}22;color:${demColors[row.va]||'#666'}">${row.va}</span>`;
+      cellB=`<span class="demand-badge" style="background:${demColors[row.vb]||'#666'}22;color:${demColors[row.vb]||'#666'}">${row.vb}</span>`;
+    } else {
+      cellA=`<span>${row.va}</span>`;
+      cellB=`<span>${row.vb}</span>`;
+    }
+    html+=`<div class="cmp-row${even}"><div class="cr-label">${row.label}</div><div class="cr-val">${cellA}</div><div class="cr-val">${cellB}</div></div>`;
+  });
+
+  // Skill comparison section
+  html += `<div class="radar-section"><h4>📊 Skill Requirements Comparison</h4>`;
+  SKILLS.forEach(sk=>{
+    const vA=parseFloat(pA[sk.key]||0), vB=parseFloat(pB[sk.key]||0);
+    const pctA=(vA/10*100).toFixed(0), pctB=(vB/10*100).toFixed(0);
+    html+=`<div class="skill-compare-row">
+      <div class="sc-label">${sk.label}</div>
+      <div class="sc-bars">
+        <div class="sc-bar-row"><div class="sc-dot" style="background:${colA}"></div><div class="sc-track"><div class="sc-fill" style="width:${pctA}%;background:${colA}"></div></div><span style="font-size:11px;color:var(--mt);min-width:26px">${vA.toFixed(1)}</span></div>
+        <div class="sc-bar-row"><div class="sc-dot" style="background:${colB}"></div><div class="sc-track"><div class="sc-fill" style="width:${pctB}%;background:${colB}"></div></div><span style="font-size:11px;color:var(--mt);min-width:26px">${vB.toFixed(1)}</span></div>
+      </div>
+    </div>`;
+  });
+  html += `<div style="margin-top:10px;display:flex;gap:16px;font-size:11px;color:var(--mt)"><span><span style="color:${colA}">■</span> ${rA}</span><span><span style="color:${colB}">■</span> ${rB}</span></div></div>`;
+
+  document.getElementById('cmpResult').innerHTML=html;
+  document.getElementById('cmpResult').style.display='block';
+  document.getElementById('cmpResult').scrollIntoView({behavior:'smooth'});
+}
+// Auto-compare on load
+window.addEventListener('load', compare);
+</script>
+</body>
+</html>

@@ -1,0 +1,1008 @@
+{
+  "Data Scientist / ML / AI Engineer": [
+    {
+      "name": "Google",
+      "url": "https://careers.google.com",
+      "tag": "FAANG"
+    },
+    {
+      "name": "Microsoft",
+      "url": "https://careers.microsoft.com",
+      "tag": "FAANG"
+    },
+    {
+      "name": "Flipkart",
+      "url": "https://careers.flipkart.com",
+      "tag": "Startup"
+    },
+    {
+      "name": "Swiggy",
+      "url": "https://careers.swiggy.com",
+      "tag": "Startup"
+    },
+    {
+      "name": "Razorpay",
+      "url": "https://razorpay.com/jobs",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Mu Sigma",
+      "url": "https://www.mu-sigma.com/careers",
+      "tag": "Analytics"
+    },
+    {
+      "name": "Fractal Analytics",
+      "url": "https://fractal.ai/careers",
+      "tag": "Analytics"
+    },
+    {
+      "name": "Tiger Analytics",
+      "url": "https://www.tigeranalytics.com/careers",
+      "tag": "Analytics"
+    }
+  ],
+  "Data & Analytics Engineer": [
+    {
+      "name": "Walmart Global Tech",
+      "url": "https://careers.walmart.com",
+      "tag": "Retail Tech"
+    },
+    {
+      "name": "PhonePe",
+      "url": "https://careers.phonepe.com",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Dunzo",
+      "url": "https://dunzo.com/careers",
+      "tag": "Startup"
+    },
+    {
+      "name": "Swiggy",
+      "url": "https://careers.swiggy.com",
+      "tag": "Startup"
+    },
+    {
+      "name": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers",
+      "tag": "Consulting"
+    },
+    {
+      "name": "Accenture",
+      "url": "https://www.accenture.com/careers",
+      "tag": "MNC"
+    }
+  ],
+  "Backend Engineer": [
+    {
+      "name": "Amazon",
+      "url": "https://www.amazon.jobs",
+      "tag": "FAANG"
+    },
+    {
+      "name": "Atlassian",
+      "url": "https://www.atlassian.com/company/careers",
+      "tag": "Product"
+    },
+    {
+      "name": "Zomato",
+      "url": "https://www.zomato.com/careers",
+      "tag": "Startup"
+    },
+    {
+      "name": "Zepto",
+      "url": "https://www.zepto.com/careers",
+      "tag": "Startup"
+    },
+    {
+      "name": "CRED",
+      "url": "https://careers.cred.club",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Juspay",
+      "url": "https://juspay.in/careers",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Freshworks",
+      "url": "https://www.freshworks.com/company/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "Postman",
+      "url": "https://www.postman.com/company/careers",
+      "tag": "SaaS"
+    }
+  ],
+  "Frontend Engineer": [
+    {
+      "name": "Myntra",
+      "url": "https://careers.myntra.com",
+      "tag": "E-Commerce"
+    },
+    {
+      "name": "Meesho",
+      "url": "https://meesho.io/careers",
+      "tag": "Startup"
+    },
+    {
+      "name": "Groww",
+      "url": "https://groww.in/careers",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Sharechat",
+      "url": "https://sharechat.com/careers",
+      "tag": "Social"
+    },
+    {
+      "name": "Adobe",
+      "url": "https://careers.adobe.com",
+      "tag": "MNC"
+    },
+    {
+      "name": "Intuit",
+      "url": "https://careers.intuit.com",
+      "tag": "MNC"
+    }
+  ],
+  "Full-Stack Developer": [
+    {
+      "name": "Freshworks",
+      "url": "https://www.freshworks.com/company/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "Zoho",
+      "url": "https://careers.zohocorp.com",
+      "tag": "SaaS"
+    },
+    {
+      "name": "BrowserStack",
+      "url": "https://www.browserstack.com/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "Chargebee",
+      "url": "https://www.chargebee.com/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "CleverTap",
+      "url": "https://clevertap.com/careers",
+      "tag": "MarTech"
+    },
+    {
+      "name": "Capillary Technologies",
+      "url": "https://capillarytech.com/careers",
+      "tag": "MarTech"
+    }
+  ],
+  "Cloud Engineer & Platform/SRE": [
+    {
+      "name": "Amazon (AWS)",
+      "url": "https://www.amazon.jobs",
+      "tag": "Cloud"
+    },
+    {
+      "name": "Google Cloud",
+      "url": "https://careers.google.com",
+      "tag": "Cloud"
+    },
+    {
+      "name": "Microsoft Azure",
+      "url": "https://careers.microsoft.com",
+      "tag": "Cloud"
+    },
+    {
+      "name": "Nutanix",
+      "url": "https://www.nutanix.com/company/careers",
+      "tag": "Infra"
+    },
+    {
+      "name": "Druva",
+      "url": "https://www.druva.com/company/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "Netskope",
+      "url": "https://www.netskope.com/company/careers",
+      "tag": "Security"
+    }
+  ],
+  "DevOps Engineer": [
+    {
+      "name": "Amazon",
+      "url": "https://www.amazon.jobs",
+      "tag": "FAANG"
+    },
+    {
+      "name": "Infosys",
+      "url": "https://www.infosys.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "TCS",
+      "url": "https://ibegin.tcs.com",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Freshworks",
+      "url": "https://www.freshworks.com/company/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "Juspay",
+      "url": "https://juspay.in/careers",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Razorpay",
+      "url": "https://razorpay.com/jobs",
+      "tag": "Fintech"
+    }
+  ],
+  "Security Operations Analyst": [
+    {
+      "name": "CERT-In",
+      "url": "https://www.cert-in.org.in",
+      "tag": "Govt"
+    },
+    {
+      "name": "Wipro CyberSecurity",
+      "url": "https://www.wipro.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "HCL Technologies",
+      "url": "https://www.hcltech.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Paytm",
+      "url": "https://paytm.com/about-us/life-at-paytm",
+      "tag": "Fintech"
+    },
+    {
+      "name": "IBM Security",
+      "url": "https://www.ibm.com/employment",
+      "tag": "MNC"
+    },
+    {
+      "name": "Securonix",
+      "url": "https://www.securonix.com/careers",
+      "tag": "Security"
+    }
+  ],
+  "Penetration Tester": [
+    {
+      "name": "Palo Alto Networks",
+      "url": "https://www.paloaltonetworks.com/company/careers",
+      "tag": "Security"
+    },
+    {
+      "name": "Rapid7",
+      "url": "https://www.rapid7.com/company/careers",
+      "tag": "Security"
+    },
+    {
+      "name": "Synack",
+      "url": "https://www.synack.com/company/careers",
+      "tag": "Security"
+    },
+    {
+      "name": "Deloitte Cyber",
+      "url": "https://www2.deloitte.com/careers",
+      "tag": "Consulting"
+    },
+    {
+      "name": "KPMG Cyber",
+      "url": "https://home.kpmg/careers",
+      "tag": "Consulting"
+    },
+    {
+      "name": "SISA Information",
+      "url": "https://www.sisainfosec.com/careers",
+      "tag": "Security"
+    }
+  ],
+  "Cybersecurity & Cloud Security Engineer": [
+    {
+      "name": "Palo Alto Networks",
+      "url": "https://www.paloaltonetworks.com/company/careers",
+      "tag": "Security"
+    },
+    {
+      "name": "CrowdStrike",
+      "url": "https://www.crowdstrike.com/careers",
+      "tag": "Security"
+    },
+    {
+      "name": "Zscaler",
+      "url": "https://www.zscaler.com/careers",
+      "tag": "Security"
+    },
+    {
+      "name": "Wipro CyberSecurity",
+      "url": "https://www.wipro.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Check Point Software",
+      "url": "https://www.checkpoint.com/careers",
+      "tag": "Security"
+    },
+    {
+      "name": "Netskope",
+      "url": "https://www.netskope.com/company/careers",
+      "tag": "Security"
+    }
+  ],
+  "MLOps Engineer": [
+    {
+      "name": "Google",
+      "url": "https://careers.google.com",
+      "tag": "FAANG"
+    },
+    {
+      "name": "Netflix",
+      "url": "https://jobs.netflix.com",
+      "tag": "FAANG"
+    },
+    {
+      "name": "Databricks",
+      "url": "https://databricks.com/company/careers",
+      "tag": "Data"
+    },
+    {
+      "name": "Flipkart",
+      "url": "https://careers.flipkart.com",
+      "tag": "E-Commerce"
+    },
+    {
+      "name": "Uber",
+      "url": "https://www.uber.com/us/en/careers",
+      "tag": "Tech"
+    },
+    {
+      "name": "Swiggy",
+      "url": "https://careers.swiggy.com",
+      "tag": "Startup"
+    }
+  ],
+  "Mobile Application Developer": [
+    {
+      "name": "Paytm",
+      "url": "https://paytm.com/about-us/life-at-paytm",
+      "tag": "Fintech"
+    },
+    {
+      "name": "PhonePe",
+      "url": "https://careers.phonepe.com",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Meesho",
+      "url": "https://meesho.io/careers",
+      "tag": "E-Commerce"
+    },
+    {
+      "name": "ShareChat",
+      "url": "https://sharechat.com/careers",
+      "tag": "Social"
+    },
+    {
+      "name": "Dream11",
+      "url": "https://www.dream11.com/careers",
+      "tag": "Gaming"
+    },
+    {
+      "name": "Navi Technologies",
+      "url": "https://navi.com/careers",
+      "tag": "Fintech"
+    }
+  ],
+  "QA & Automation Test Engineer": [
+    {
+      "name": "BrowserStack",
+      "url": "https://www.browserstack.com/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "LambdaTest",
+      "url": "https://www.lambdatest.com/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "Wipro",
+      "url": "https://www.wipro.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Infosys",
+      "url": "https://www.infosys.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Postman",
+      "url": "https://www.postman.com/company/careers",
+      "tag": "Dev Tools"
+    },
+    {
+      "name": "ThoughtWorks",
+      "url": "https://www.thoughtworks.com/careers",
+      "tag": "Consulting"
+    }
+  ],
+  "UX Designer": [
+    {
+      "name": "Flipkart",
+      "url": "https://careers.flipkart.com",
+      "tag": "E-Commerce"
+    },
+    {
+      "name": "Swiggy",
+      "url": "https://careers.swiggy.com",
+      "tag": "Startup"
+    },
+    {
+      "name": "Razorpay",
+      "url": "https://razorpay.com/jobs",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Adobe",
+      "url": "https://careers.adobe.com",
+      "tag": "MNC"
+    },
+    {
+      "name": "Zomato",
+      "url": "https://www.zomato.com/careers",
+      "tag": "Startup"
+    },
+    {
+      "name": "Dunzo",
+      "url": "https://dunzo.com/careers",
+      "tag": "Startup"
+    }
+  ],
+  "Associate Product Manager": [
+    {
+      "name": "Flipkart",
+      "url": "https://careers.flipkart.com",
+      "tag": "E-Commerce"
+    },
+    {
+      "name": "Razorpay",
+      "url": "https://razorpay.com/jobs",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Swiggy",
+      "url": "https://careers.swiggy.com",
+      "tag": "Startup"
+    },
+    {
+      "name": "CRED",
+      "url": "https://careers.cred.club",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Meesho",
+      "url": "https://meesho.io/careers",
+      "tag": "E-Commerce"
+    },
+    {
+      "name": "Urban Company",
+      "url": "https://urbancompany.com/careers",
+      "tag": "Startup"
+    }
+  ],
+  "Database Administrator": [
+    {
+      "name": "Oracle India",
+      "url": "https://oracle.com/corporate/careers",
+      "tag": "MNC"
+    },
+    {
+      "name": "IBM India",
+      "url": "https://www.ibm.com/employment",
+      "tag": "MNC"
+    },
+    {
+      "name": "TCS",
+      "url": "https://ibegin.tcs.com",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Infosys",
+      "url": "https://www.infosys.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "HCL Technologies",
+      "url": "https://www.hcltech.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Capgemini",
+      "url": "https://www.capgemini.com/careers",
+      "tag": "Consulting"
+    }
+  ],
+  "Embedded Systems Engineer": [
+    {
+      "name": "Texas Instruments India",
+      "url": "https://careers.ti.com",
+      "tag": "Semiconductor"
+    },
+    {
+      "name": "Intel India",
+      "url": "https://jobs.intel.com",
+      "tag": "Semiconductor"
+    },
+    {
+      "name": "Qualcomm India",
+      "url": "https://www.qualcomm.com/company/careers",
+      "tag": "Semiconductor"
+    },
+    {
+      "name": "Bosch India",
+      "url": "https://www.bosch.in/careers",
+      "tag": "Automotive"
+    },
+    {
+      "name": "Continental",
+      "url": "https://jobs.continental.com",
+      "tag": "Automotive"
+    },
+    {
+      "name": "Siemens India",
+      "url": "https://new.siemens.com/in/en/company/jobs",
+      "tag": "Industrial"
+    }
+  ],
+  "Game Developer": [
+    {
+      "name": "Dream11",
+      "url": "https://www.dream11.com/careers",
+      "tag": "Gaming"
+    },
+    {
+      "name": "Nazara Technologies",
+      "url": "https://nazara.com/careers",
+      "tag": "Gaming"
+    },
+    {
+      "name": "nCore Games",
+      "url": "https://ncoregames.com",
+      "tag": "Gaming"
+    },
+    {
+      "name": "Ubisoft India",
+      "url": "https://www.ubisoft.com/en-us/company/careers",
+      "tag": "AAA"
+    },
+    {
+      "name": "EA India",
+      "url": "https://www.ea.com/careers",
+      "tag": "AAA"
+    },
+    {
+      "name": "Zynga India",
+      "url": "https://www.zynga.com/careers",
+      "tag": "Mobile Gaming"
+    }
+  ],
+  "Systems Software Engineer": [
+    {
+      "name": "Google",
+      "url": "https://careers.google.com",
+      "tag": "FAANG"
+    },
+    {
+      "name": "Microsoft",
+      "url": "https://careers.microsoft.com",
+      "tag": "FAANG"
+    },
+    {
+      "name": "VMware",
+      "url": "https://careers.vmware.com",
+      "tag": "Infra"
+    },
+    {
+      "name": "NetApp",
+      "url": "https://jobs.netapp.com",
+      "tag": "Storage"
+    },
+    {
+      "name": "Juniper Networks",
+      "url": "https://careers.juniper.net",
+      "tag": "Networking"
+    },
+    {
+      "name": "Nutanix",
+      "url": "https://www.nutanix.com/company/careers",
+      "tag": "Infra"
+    }
+  ],
+  "GRC Analyst": [
+    {
+      "name": "Deloitte",
+      "url": "https://www2.deloitte.com/careers",
+      "tag": "Consulting"
+    },
+    {
+      "name": "PwC",
+      "url": "https://www.pwc.in/careers",
+      "tag": "Consulting"
+    },
+    {
+      "name": "KPMG",
+      "url": "https://home.kpmg/careers",
+      "tag": "Consulting"
+    },
+    {
+      "name": "EY",
+      "url": "https://www.ey.com/careers",
+      "tag": "Consulting"
+    },
+    {
+      "name": "Wipro",
+      "url": "https://www.wipro.com/careers",
+      "tag": "IT Services"
+    }
+  ],
+  "Cloud Architect": [
+    {
+      "name": "Amazon (AWS)",
+      "url": "https://www.amazon.jobs",
+      "tag": "Cloud"
+    },
+    {
+      "name": "Google Cloud",
+      "url": "https://careers.google.com",
+      "tag": "Cloud"
+    },
+    {
+      "name": "Microsoft",
+      "url": "https://careers.microsoft.com",
+      "tag": "Cloud"
+    },
+    {
+      "name": "Accenture",
+      "url": "https://www.accenture.com/careers",
+      "tag": "Consulting"
+    },
+    {
+      "name": "Infosys",
+      "url": "https://www.infosys.com/careers",
+      "tag": "IT Services"
+    }
+  ],
+  "Infrastructure Engineer": [
+    {
+      "name": "Wipro",
+      "url": "https://www.wipro.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "HCL",
+      "url": "https://www.hcltech.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "TCS",
+      "url": "https://ibegin.tcs.com",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Rackspace",
+      "url": "https://rackspace.com/careers",
+      "tag": "Cloud"
+    },
+    {
+      "name": "Kyndryl",
+      "url": "https://www.kyndryl.com/careers",
+      "tag": "Infra"
+    }
+  ],
+  "Platform Engineer": [
+    {
+      "name": "Atlassian",
+      "url": "https://www.atlassian.com/company/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "HashiCorp",
+      "url": "https://www.hashicorp.com/jobs",
+      "tag": "DevTools"
+    },
+    {
+      "name": "Razorpay",
+      "url": "https://razorpay.com/jobs",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Swiggy",
+      "url": "https://careers.swiggy.com",
+      "tag": "Startup"
+    },
+    {
+      "name": "Juspay",
+      "url": "https://juspay.in/careers",
+      "tag": "Fintech"
+    }
+  ],
+  "Solutions Architect": [
+    {
+      "name": "Amazon (AWS)",
+      "url": "https://www.amazon.jobs",
+      "tag": "Cloud"
+    },
+    {
+      "name": "Microsoft",
+      "url": "https://careers.microsoft.com",
+      "tag": "Cloud"
+    },
+    {
+      "name": "Salesforce",
+      "url": "https://salesforce.com/company/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "ServiceNow",
+      "url": "https://careers.servicenow.com",
+      "tag": "SaaS"
+    },
+    {
+      "name": "SAP India",
+      "url": "https://sap.com/about/careers",
+      "tag": "ERP"
+    }
+  ],
+  "Application Support Engineer": [
+    {
+      "name": "TCS",
+      "url": "https://ibegin.tcs.com",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Infosys",
+      "url": "https://www.infosys.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Wipro",
+      "url": "https://www.wipro.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Capgemini",
+      "url": "https://www.capgemini.com/careers",
+      "tag": "Consulting"
+    },
+    {
+      "name": "Cognizant",
+      "url": "https://careers.cognizant.com",
+      "tag": "IT Services"
+    }
+  ],
+  "Performance Test Engineer": [
+    {
+      "name": "BrowserStack",
+      "url": "https://www.browserstack.com/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "LambdaTest",
+      "url": "https://www.lambdatest.com/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "Blazemeter",
+      "url": "https://www.blazemeter.com",
+      "tag": "Testing"
+    },
+    {
+      "name": "Infosys",
+      "url": "https://www.infosys.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "TCS",
+      "url": "https://ibegin.tcs.com",
+      "tag": "IT Services"
+    }
+  ],
+  "Test Architect": [
+    {
+      "name": "ThoughtWorks",
+      "url": "https://www.thoughtworks.com/careers",
+      "tag": "Consulting"
+    },
+    {
+      "name": "Capgemini",
+      "url": "https://www.capgemini.com/careers",
+      "tag": "Consulting"
+    },
+    {
+      "name": "BrowserStack",
+      "url": "https://www.browserstack.com/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "LambdaTest",
+      "url": "https://www.lambdatest.com/careers",
+      "tag": "SaaS"
+    },
+    {
+      "name": "Wipro",
+      "url": "https://www.wipro.com/careers",
+      "tag": "IT Services"
+    }
+  ],
+  "Product Analyst": [
+    {
+      "name": "Flipkart",
+      "url": "https://careers.flipkart.com",
+      "tag": "E-Commerce"
+    },
+    {
+      "name": "Zomato",
+      "url": "https://www.zomato.com/careers",
+      "tag": "Startup"
+    },
+    {
+      "name": "Razorpay",
+      "url": "https://razorpay.com/jobs",
+      "tag": "Fintech"
+    },
+    {
+      "name": "PhonePe",
+      "url": "https://careers.phonepe.com",
+      "tag": "Fintech"
+    },
+    {
+      "name": "MakeMyTrip",
+      "url": "https://careers.makemytrip.com",
+      "tag": "Travel"
+    }
+  ],
+  "SOC Analyst": [
+    {
+      "name": "CERT-In",
+      "url": "https://www.cert-in.org.in",
+      "tag": "Govt"
+    },
+    {
+      "name": "IBM Security",
+      "url": "https://www.ibm.com/employment",
+      "tag": "MNC"
+    },
+    {
+      "name": "Wipro CyberSecurity",
+      "url": "https://www.wipro.com/careers",
+      "tag": "IT Services"
+    },
+    {
+      "name": "Securonix",
+      "url": "https://www.securonix.com/careers",
+      "tag": "Security"
+    },
+    {
+      "name": "Lucideus",
+      "url": "https://lucideus.com/careers",
+      "tag": "Security"
+    }
+  ],
+  "BI Analyst": [
+    {
+      "name": "Mu Sigma",
+      "url": "https://www.mu-sigma.com/careers",
+      "tag": "Analytics"
+    },
+    {
+      "name": "Tredence",
+      "url": "https://www.tredence.com/careers",
+      "tag": "Analytics"
+    },
+    {
+      "name": "Walmart Global Tech",
+      "url": "https://careers.walmart.com",
+      "tag": "Retail"
+    },
+    {
+      "name": "ThoughtSpot",
+      "url": "https://www.thoughtspot.com/careers",
+      "tag": "BI"
+    },
+    {
+      "name": "Tableau (Salesforce)",
+      "url": "https://salesforce.com/company/careers",
+      "tag": "BI"
+    }
+  ],
+  "Analytics Engineer": [
+    {
+      "name": "Swiggy",
+      "url": "https://careers.swiggy.com",
+      "tag": "Startup"
+    },
+    {
+      "name": "Razorpay",
+      "url": "https://razorpay.com/jobs",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Groww",
+      "url": "https://groww.in/careers",
+      "tag": "Fintech"
+    },
+    {
+      "name": "dbt Labs",
+      "url": "https://www.getdbt.com/careers",
+      "tag": "Data"
+    },
+    {
+      "name": "Databricks",
+      "url": "https://databricks.com/company/careers",
+      "tag": "Data"
+    }
+  ],
+  "Data Analyst": [
+    {
+      "name": "Flipkart",
+      "url": "https://careers.flipkart.com",
+      "tag": "E-Commerce"
+    },
+    {
+      "name": "Amazon",
+      "url": "https://www.amazon.jobs",
+      "tag": "FAANG"
+    },
+    {
+      "name": "Zomato",
+      "url": "https://www.zomato.com/careers",
+      "tag": "Startup"
+    },
+    {
+      "name": "PhonePe",
+      "url": "https://careers.phonepe.com",
+      "tag": "Fintech"
+    },
+    {
+      "name": "Paytm",
+      "url": "https://paytm.com/about-us/life-at-paytm",
+      "tag": "Fintech"
+    }
+  ],
+  "UI Designer": [
+    {
+      "name": "Zomato",
+      "url": "https://www.zomato.com/careers",
+      "tag": "Startup"
+    },
+    {
+      "name": "Swiggy",
+      "url": "https://careers.swiggy.com",
+      "tag": "Startup"
+    },
+    {
+      "name": "Meesho",
+      "url": "https://meesho.io/careers",
+      "tag": "E-Commerce"
+    },
+    {
+      "name": "Adobe",
+      "url": "https://careers.adobe.com",
+      "tag": "MNC"
+    },
+    {
+      "name": "InMobi",
+      "url": "https://www.inmobi.com/company/careers",
+      "tag": "AdTech"
+    }
+  ]
+}

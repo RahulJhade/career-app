@@ -1,0 +1,18 @@
+{
+  "Cloud Engineer": "Cloud Engineer & Platform/SRE",
+  "Platform Engineer": "Cloud Engineer & Platform/SRE",
+  "Site Reliability Engineer": "Cloud Engineer & Platform/SRE",
+  "AI Engineer": "Data Scientist / ML / AI Engineer",
+  "Data Scientist": "Data Scientist / ML / AI Engineer",
+  "Machine Learning Engineer": "Data Scientist / ML / AI Engineer",
+  "BI Analyst": "Data Scientist / ML / AI Engineer",
+  "Analytics Engineer": "Data & Analytics Engineer",
+  "Data Engineer": "Data & Analytics Engineer",
+  "SOC Analyst": "Security Operations Analyst",
+  "Security Analyst": "Security Operations Analyst",
+  "Security Operations Engineer": "Security Operations Analyst",
+  "Cybersecurity Engineer": "Cybersecurity & Cloud Security Engineer",
+  "Cloud Security Engineer": "Cybersecurity & Cloud Security Engineer",
+  "QA Engineer": "QA & Automation Test Engineer",
+  "Automation Test Engineer": "QA & Automation Test Engineer"
+}

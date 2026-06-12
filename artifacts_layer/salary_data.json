@@ -1,0 +1,376 @@
+{
+  "Data Scientist / ML / AI Engineer": {
+    "india_lpa": [
+      8,
+      28
+    ],
+    "global_usd": [
+      95000,
+      160000
+    ],
+    "demand": "Very High"
+  },
+  "Data & Analytics Engineer": {
+    "india_lpa": [
+      7,
+      22
+    ],
+    "global_usd": [
+      90000,
+      145000
+    ],
+    "demand": "High"
+  },
+  "Backend Engineer": {
+    "india_lpa": [
+      6,
+      24
+    ],
+    "global_usd": [
+      85000,
+      150000
+    ],
+    "demand": "Very High"
+  },
+  "Full-Stack Developer": {
+    "india_lpa": [
+      5,
+      22
+    ],
+    "global_usd": [
+      80000,
+      140000
+    ],
+    "demand": "Very High"
+  },
+  "Frontend Engineer": {
+    "india_lpa": [
+      5,
+      20
+    ],
+    "global_usd": [
+      75000,
+      130000
+    ],
+    "demand": "High"
+  },
+  "Cloud Engineer & Platform/SRE": {
+    "india_lpa": [
+      8,
+      30
+    ],
+    "global_usd": [
+      100000,
+      165000
+    ],
+    "demand": "Very High"
+  },
+  "DevOps Engineer": {
+    "india_lpa": [
+      7,
+      25
+    ],
+    "global_usd": [
+      95000,
+      155000
+    ],
+    "demand": "Very High"
+  },
+  "Security Operations Analyst": {
+    "india_lpa": [
+      6,
+      20
+    ],
+    "global_usd": [
+      80000,
+      130000
+    ],
+    "demand": "High"
+  },
+  "Penetration Tester": {
+    "india_lpa": [
+      6,
+      22
+    ],
+    "global_usd": [
+      85000,
+      140000
+    ],
+    "demand": "High"
+  },
+  "Cybersecurity & Cloud Security Engineer": {
+    "india_lpa": [
+      8,
+      28
+    ],
+    "global_usd": [
+      100000,
+      160000
+    ],
+    "demand": "High"
+  },
+  "GRC Analyst": {
+    "india_lpa": [
+      5,
+      16
+    ],
+    "global_usd": [
+      70000,
+      120000
+    ],
+    "demand": "Medium"
+  },
+  "Mobile Application Developer": {
+    "india_lpa": [
+      5,
+      20
+    ],
+    "global_usd": [
+      80000,
+      135000
+    ],
+    "demand": "High"
+  },
+  "QA & Automation Test Engineer": {
+    "india_lpa": [
+      4,
+      16
+    ],
+    "global_usd": [
+      65000,
+      115000
+    ],
+    "demand": "Medium"
+  },
+  "Database Administrator": {
+    "india_lpa": [
+      5,
+      18
+    ],
+    "global_usd": [
+      75000,
+      125000
+    ],
+    "demand": "Medium"
+  },
+  "Embedded Systems Engineer": {
+    "india_lpa": [
+      5,
+      18
+    ],
+    "global_usd": [
+      80000,
+      130000
+    ],
+    "demand": "Medium"
+  },
+  "UX Designer": {
+    "india_lpa": [
+      4,
+      18
+    ],
+    "global_usd": [
+      70000,
+      120000
+    ],
+    "demand": "Medium"
+  },
+  "UI Designer": {
+    "india_lpa": [
+      4,
+      16
+    ],
+    "global_usd": [
+      60000,
+      110000
+    ],
+    "demand": "Medium"
+  },
+  "Associate Product Manager": {
+    "india_lpa": [
+      6,
+      24
+    ],
+    "global_usd": [
+      90000,
+      150000
+    ],
+    "demand": "High"
+  },
+  "Game Developer": {
+    "india_lpa": [
+      4,
+      18
+    ],
+    "global_usd": [
+      70000,
+      120000
+    ],
+    "demand": "Medium"
+  },
+  "MLOps Engineer": {
+    "india_lpa": [
+      9,
+      32
+    ],
+    "global_usd": [
+      110000,
+      175000
+    ],
+    "demand": "Very High"
+  },
+  "Systems Software Engineer": {
+    "india_lpa": [
+      7,
+      26
+    ],
+    "global_usd": [
+      95000,
+      160000
+    ],
+    "demand": "High"
+  },
+  "Cloud Architect": {
+    "india_lpa": [
+      15,
+      45
+    ],
+    "global_usd": [
+      130000,
+      200000
+    ],
+    "demand": "Very High"
+  },
+  "Infrastructure Engineer": {
+    "india_lpa": [
+      5,
+      18
+    ],
+    "global_usd": [
+      75000,
+      125000
+    ],
+    "demand": "Medium"
+  },
+  "Platform Engineer": {
+    "india_lpa": [
+      9,
+      30
+    ],
+    "global_usd": [
+      105000,
+      165000
+    ],
+    "demand": "Very High"
+  },
+  "Solutions Architect": {
+    "india_lpa": [
+      15,
+      40
+    ],
+    "global_usd": [
+      125000,
+      195000
+    ],
+    "demand": "High"
+  },
+  "Application Support Engineer": {
+    "india_lpa": [
+      3,
+      12
+    ],
+    "global_usd": [
+      55000,
+      95000
+    ],
+    "demand": "Medium"
+  },
+  "Performance Test Engineer": {
+    "india_lpa": [
+      5,
+      16
+    ],
+    "global_usd": [
+      70000,
+      115000
+    ],
+    "demand": "Low"
+  },
+  "Test Architect": {
+    "india_lpa": [
+      10,
+      28
+    ],
+    "global_usd": [
+      95000,
+      145000
+    ],
+    "demand": "Medium"
+  },
+  "Product Analyst": {
+    "india_lpa": [
+      6,
+      20
+    ],
+    "global_usd": [
+      80000,
+      130000
+    ],
+    "demand": "High"
+  },
+  "SOC Analyst": {
+    "india_lpa": [
+      4,
+      16
+    ],
+    "global_usd": [
+      65000,
+      110000
+    ],
+    "demand": "Medium"
+  },
+  "BI Analyst": {
+    "india_lpa": [
+      5,
+      18
+    ],
+    "global_usd": [
+      70000,
+      120000
+    ],
+    "demand": "Medium"
+  },
+  "Analytics Engineer": {
+    "india_lpa": [
+      7,
+      24
+    ],
+    "global_usd": [
+      90000,
+      145000
+    ],
+    "demand": "High"
+  },
+  "Security Analyst": {
+    "india_lpa": [
+      5,
+      18
+    ],
+    "global_usd": [
+      75000,
+      125000
+    ],
+    "demand": "Medium"
+  },
+  "Data Analyst": {
+    "india_lpa": [
+      4,
+      16
+    ],
+    "global_usd": [
+      65000,
+      110000
+    ],
+    "demand": "High"
+  }
+}

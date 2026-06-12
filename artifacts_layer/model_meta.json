@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "trained_at": "2026-05-08T06:31:15.321050",
+  "n_classes": 30,
+  "base_models": [
+    "xgb",
+    "lgbm",
+    "cat",
+    "lr"
+  ],
+  "meta_model": "LogisticRegression",
+  "stacking_type": "OOF-5fold",
+  "val_macro_f1": 0.829121,
+  "val_accuracy": 0.838,
+  "test_macro_f1": 0.839871,
+  "test_accuracy": 0.848167
+}

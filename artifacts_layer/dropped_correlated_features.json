@@ -1,0 +1,21 @@
+{
+  "threshold": 0.85,
+  "dropped_features": [
+    "pentest_tools_known_count",
+    "ui_ux_design_skill",
+    "soft_skills_mean",
+    "activity_max",
+    "cgpa_normalized",
+    "data_science_ml_skill",
+    "cybersecurity_skill",
+    "security_composite",
+    "projects_mobile_android",
+    "cert_level_bin",
+    "cloud_composite",
+    "github_commits_90d",
+    "projects_security_defense",
+    "security_total",
+    "defensive_focused",
+    "incident_response_cases"
+  ]
+}

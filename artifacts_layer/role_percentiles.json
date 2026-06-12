@@ -1,0 +1,1682 @@
+{
+  "API Engineer": {
+    "cgpa": {
+      "p25": 7.37,
+      "p50": 7.87,
+      "p75": 8.4,
+      "mean": 7.88
+    },
+    "programming_skill": {
+      "p25": 6.97,
+      "p50": 7.89,
+      "p75": 8.73,
+      "mean": 7.82
+    },
+    "data_analytics_skill": {
+      "p25": 4.72,
+      "p50": 5.88,
+      "p75": 6.99,
+      "mean": 5.84
+    },
+    "data_science_ml_skill": {
+      "p25": 4.74,
+      "p50": 5.76,
+      "p75": 6.92,
+      "mean": 5.84
+    },
+    "cloud_devops_skill": {
+      "p25": 4.69,
+      "p50": 5.96,
+      "p75": 7.12,
+      "mean": 5.97
+    },
+    "cybersecurity_skill": {
+      "p25": 2.86,
+      "p50": 4.01,
+      "p75": 5.07,
+      "mean": 4.01
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 7.0,
+      "p75": 9.0,
+      "mean": 7.43
+    },
+    "github_commits_90d": {
+      "p25": 105.0,
+      "p50": 147.0,
+      "p75": 188.0,
+      "mean": 147.79
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 2.1
+    }
+  },
+  "Application Support Engineer": {
+    "cgpa": {
+      "p25": 7.28,
+      "p50": 7.82,
+      "p75": 8.39,
+      "mean": 7.81
+    },
+    "programming_skill": {
+      "p25": 3.19,
+      "p50": 4.22,
+      "p75": 5.29,
+      "mean": 4.24
+    },
+    "data_analytics_skill": {
+      "p25": 4.48,
+      "p50": 5.69,
+      "p75": 6.82,
+      "mean": 5.66
+    },
+    "data_science_ml_skill": {
+      "p25": 4.37,
+      "p50": 5.62,
+      "p75": 6.7,
+      "mean": 5.61
+    },
+    "cloud_devops_skill": {
+      "p25": 4.58,
+      "p50": 5.78,
+      "p75": 7.02,
+      "mean": 5.82
+    },
+    "cybersecurity_skill": {
+      "p25": 2.95,
+      "p50": 3.97,
+      "p75": 5.08,
+      "mean": 3.96
+    },
+    "project_count": {
+      "p25": 4.0,
+      "p50": 6.0,
+      "p75": 7.0,
+      "mean": 5.8
+    },
+    "github_commits_90d": {
+      "p25": 67.0,
+      "p50": 110.0,
+      "p75": 158.0,
+      "mean": 116.77
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 1.96
+    }
+  },
+  "Associate Product Manager": {
+    "cgpa": {
+      "p25": 7.34,
+      "p50": 7.87,
+      "p75": 8.41,
+      "mean": 7.89
+    },
+    "programming_skill": {
+      "p25": 2.89,
+      "p50": 3.94,
+      "p75": 5.09,
+      "mean": 3.99
+    },
+    "data_analytics_skill": {
+      "p25": 4.63,
+      "p50": 5.74,
+      "p75": 6.87,
+      "mean": 5.77
+    },
+    "data_science_ml_skill": {
+      "p25": 1.52,
+      "p50": 2.45,
+      "p75": 3.4,
+      "mean": 2.46
+    },
+    "cloud_devops_skill": {
+      "p25": 1.62,
+      "p50": 2.56,
+      "p75": 3.4,
+      "mean": 2.54
+    },
+    "cybersecurity_skill": {
+      "p25": 1.54,
+      "p50": 2.45,
+      "p75": 3.51,
+      "mean": 2.53
+    },
+    "project_count": {
+      "p25": 5.0,
+      "p50": 6.0,
+      "p75": 8.0,
+      "mean": 6.6
+    },
+    "github_commits_90d": {
+      "p25": 83.0,
+      "p50": 130.0,
+      "p75": 173.0,
+      "mean": 132.38
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 2.18
+    }
+  },
+  "Backend Engineer": {
+    "cgpa": {
+      "p25": 7.29,
+      "p50": 7.84,
+      "p75": 8.33,
+      "mean": 7.82
+    },
+    "programming_skill": {
+      "p25": 6.91,
+      "p50": 7.78,
+      "p75": 8.74,
+      "mean": 7.78
+    },
+    "data_analytics_skill": {
+      "p25": 4.44,
+      "p50": 5.63,
+      "p75": 6.83,
+      "mean": 5.63
+    },
+    "data_science_ml_skill": {
+      "p25": 4.67,
+      "p50": 5.68,
+      "p75": 6.83,
+      "mean": 5.74
+    },
+    "cloud_devops_skill": {
+      "p25": 4.71,
+      "p50": 5.87,
+      "p75": 6.96,
+      "mean": 5.83
+    },
+    "cybersecurity_skill": {
+      "p25": 2.78,
+      "p50": 3.81,
+      "p75": 4.88,
+      "mean": 3.82
+    },
+    "project_count": {
+      "p25": 5.0,
+      "p50": 7.0,
+      "p75": 8.0,
+      "mean": 6.79
+    },
+    "github_commits_90d": {
+      "p25": 84.25,
+      "p50": 126.5,
+      "p75": 166.0,
+      "mean": 127.28
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 1.0,
+      "p75": 2.0,
+      "mean": 1.7
+    }
+  },
+  "Cloud Architect": {
+    "cgpa": {
+      "p25": 7.38,
+      "p50": 7.92,
+      "p75": 8.47,
+      "mean": 7.91
+    },
+    "programming_skill": {
+      "p25": 5.17,
+      "p50": 6.26,
+      "p75": 7.41,
+      "mean": 6.26
+    },
+    "data_analytics_skill": {
+      "p25": 5.0,
+      "p50": 6.12,
+      "p75": 7.24,
+      "mean": 6.09
+    },
+    "data_science_ml_skill": {
+      "p25": 3.33,
+      "p50": 4.35,
+      "p75": 5.39,
+      "mean": 4.35
+    },
+    "cloud_devops_skill": {
+      "p25": 7.49,
+      "p50": 8.37,
+      "p75": 9.29,
+      "mean": 8.32
+    },
+    "cybersecurity_skill": {
+      "p25": 3.12,
+      "p50": 4.31,
+      "p75": 5.25,
+      "mean": 4.25
+    },
+    "project_count": {
+      "p25": 7.0,
+      "p50": 9.0,
+      "p75": 10.0,
+      "mean": 8.53
+    },
+    "github_commits_90d": {
+      "p25": 139.0,
+      "p50": 182.0,
+      "p75": 223.0,
+      "mean": 181.45
+    },
+    "certifications_total": {
+      "p25": 2.0,
+      "p50": 4.0,
+      "p75": 5.0,
+      "mean": 3.98
+    }
+  },
+  "Cloud Engineer & Platform/SRE": {
+    "cgpa": {
+      "p25": 7.39,
+      "p50": 7.87,
+      "p75": 8.36,
+      "mean": 7.86
+    },
+    "programming_skill": {
+      "p25": 4.84,
+      "p50": 5.99,
+      "p75": 7.13,
+      "mean": 5.99
+    },
+    "data_analytics_skill": {
+      "p25": 4.87,
+      "p50": 5.96,
+      "p75": 7.14,
+      "mean": 5.98
+    },
+    "data_science_ml_skill": {
+      "p25": 3.11,
+      "p50": 4.19,
+      "p75": 5.2,
+      "mean": 4.21
+    },
+    "cloud_devops_skill": {
+      "p25": 7.32,
+      "p50": 8.2,
+      "p75": 9.21,
+      "mean": 8.18
+    },
+    "cybersecurity_skill": {
+      "p25": 3.17,
+      "p50": 4.2,
+      "p75": 5.29,
+      "mean": 4.23
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 8.0,
+      "p75": 10.0,
+      "mean": 7.95
+    },
+    "github_commits_90d": {
+      "p25": 120.0,
+      "p50": 166.0,
+      "p75": 207.0,
+      "mean": 163.84
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 3.0,
+      "p75": 4.0,
+      "mean": 2.86
+    }
+  },
+  "Cybersecurity & Cloud Security Engineer": {
+    "cgpa": {
+      "p25": 7.17,
+      "p50": 7.67,
+      "p75": 8.19,
+      "mean": 7.68
+    },
+    "programming_skill": {
+      "p25": 4.81,
+      "p50": 5.91,
+      "p75": 7.14,
+      "mean": 5.96
+    },
+    "data_analytics_skill": {
+      "p25": 4.79,
+      "p50": 5.93,
+      "p75": 7.05,
+      "mean": 5.9
+    },
+    "data_science_ml_skill": {
+      "p25": 3.1,
+      "p50": 4.06,
+      "p75": 5.07,
+      "mean": 4.07
+    },
+    "cloud_devops_skill": {
+      "p25": 6.06,
+      "p50": 7.28,
+      "p75": 8.56,
+      "mean": 7.23
+    },
+    "cybersecurity_skill": {
+      "p25": 7.69,
+      "p50": 8.76,
+      "p75": 9.65,
+      "mean": 8.51
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 8.0,
+      "p75": 10.0,
+      "mean": 8.19
+    },
+    "github_commits_90d": {
+      "p25": 126.0,
+      "p50": 172.0,
+      "p75": 211.0,
+      "mean": 168.13
+    },
+    "certifications_total": {
+      "p25": 2.0,
+      "p50": 3.0,
+      "p75": 4.0,
+      "mean": 2.93
+    }
+  },
+  "Data & Analytics Engineer": {
+    "cgpa": {
+      "p25": 7.53,
+      "p50": 8.03,
+      "p75": 8.57,
+      "mean": 8.04
+    },
+    "programming_skill": {
+      "p25": 5.65,
+      "p50": 6.8,
+      "p75": 7.95,
+      "mean": 6.74
+    },
+    "data_analytics_skill": {
+      "p25": 6.63,
+      "p50": 7.56,
+      "p75": 8.47,
+      "mean": 7.52
+    },
+    "data_science_ml_skill": {
+      "p25": 6.56,
+      "p50": 7.43,
+      "p75": 8.29,
+      "mean": 7.38
+    },
+    "cloud_devops_skill": {
+      "p25": 5.22,
+      "p50": 6.33,
+      "p75": 7.51,
+      "mean": 6.35
+    },
+    "cybersecurity_skill": {
+      "p25": 1.44,
+      "p50": 2.33,
+      "p75": 3.33,
+      "mean": 2.42
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 8.0,
+      "p75": 9.0,
+      "mean": 7.55
+    },
+    "github_commits_90d": {
+      "p25": 108.0,
+      "p50": 147.0,
+      "p75": 192.0,
+      "mean": 150.71
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 2.07
+    }
+  },
+  "Data Analyst": {
+    "cgpa": {
+      "p25": 7.53,
+      "p50": 7.98,
+      "p75": 8.43,
+      "mean": 7.99
+    },
+    "programming_skill": {
+      "p25": 4.68,
+      "p50": 5.55,
+      "p75": 6.78,
+      "mean": 5.65
+    },
+    "data_analytics_skill": {
+      "p25": 7.91,
+      "p50": 8.59,
+      "p75": 9.36,
+      "mean": 8.56
+    },
+    "data_science_ml_skill": {
+      "p25": 2.7,
+      "p50": 3.79,
+      "p75": 4.84,
+      "mean": 3.74
+    },
+    "cloud_devops_skill": {
+      "p25": 5.0,
+      "p50": 6.07,
+      "p75": 7.21,
+      "mean": 6.1
+    },
+    "cybersecurity_skill": {
+      "p25": 1.28,
+      "p50": 2.24,
+      "p75": 3.01,
+      "mean": 2.22
+    },
+    "project_count": {
+      "p25": 5.0,
+      "p50": 6.0,
+      "p75": 8.0,
+      "mean": 6.54
+    },
+    "github_commits_90d": {
+      "p25": 80.0,
+      "p50": 121.0,
+      "p75": 164.0,
+      "mean": 124.29
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 1.0,
+      "p75": 3.0,
+      "mean": 1.7
+    }
+  },
+  "Data Scientist / ML / AI Engineer": {
+    "cgpa": {
+      "p25": 7.66,
+      "p50": 8.18,
+      "p75": 8.71,
+      "mean": 8.18
+    },
+    "programming_skill": {
+      "p25": 5.36,
+      "p50": 6.63,
+      "p75": 7.78,
+      "mean": 6.57
+    },
+    "data_analytics_skill": {
+      "p25": 6.5,
+      "p50": 7.42,
+      "p75": 8.33,
+      "mean": 7.41
+    },
+    "data_science_ml_skill": {
+      "p25": 7.1,
+      "p50": 8.05,
+      "p75": 8.92,
+      "mean": 7.95
+    },
+    "cloud_devops_skill": {
+      "p25": 5.16,
+      "p50": 6.27,
+      "p75": 7.41,
+      "mean": 6.28
+    },
+    "cybersecurity_skill": {
+      "p25": 1.4,
+      "p50": 2.33,
+      "p75": 3.23,
+      "mean": 2.35
+    },
+    "project_count": {
+      "p25": 5.0,
+      "p50": 7.0,
+      "p75": 9.0,
+      "mean": 7.17
+    },
+    "github_commits_90d": {
+      "p25": 94.0,
+      "p50": 136.0,
+      "p75": 181.75,
+      "mean": 138.89
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 1.89
+    }
+  },
+  "Database Administrator": {
+    "cgpa": {
+      "p25": 7.26,
+      "p50": 7.76,
+      "p75": 8.29,
+      "mean": 7.78
+    },
+    "programming_skill": {
+      "p25": 5.09,
+      "p50": 6.12,
+      "p75": 7.16,
+      "mean": 6.11
+    },
+    "data_analytics_skill": {
+      "p25": 4.97,
+      "p50": 5.93,
+      "p75": 7.03,
+      "mean": 6.01
+    },
+    "data_science_ml_skill": {
+      "p25": 1.71,
+      "p50": 2.59,
+      "p75": 3.5,
+      "mean": 2.61
+    },
+    "cloud_devops_skill": {
+      "p25": 3.49,
+      "p50": 4.56,
+      "p75": 5.63,
+      "mean": 4.59
+    },
+    "cybersecurity_skill": {
+      "p25": 3.2,
+      "p50": 4.26,
+      "p75": 5.31,
+      "mean": 4.25
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 8.0,
+      "p75": 10.0,
+      "mean": 8.01
+    },
+    "github_commits_90d": {
+      "p25": 124.0,
+      "p50": 167.0,
+      "p75": 208.0,
+      "mean": 165.55
+    },
+    "certifications_total": {
+      "p25": 2.0,
+      "p50": 3.0,
+      "p75": 4.0,
+      "mean": 2.94
+    }
+  },
+  "DevOps Engineer": {
+    "cgpa": {
+      "p25": 7.3,
+      "p50": 7.74,
+      "p75": 8.3,
+      "mean": 7.8
+    },
+    "programming_skill": {
+      "p25": 4.84,
+      "p50": 6.11,
+      "p75": 7.11,
+      "mean": 6.03
+    },
+    "data_analytics_skill": {
+      "p25": 4.82,
+      "p50": 5.88,
+      "p75": 7.16,
+      "mean": 5.91
+    },
+    "data_science_ml_skill": {
+      "p25": 3.12,
+      "p50": 4.07,
+      "p75": 5.05,
+      "mean": 4.08
+    },
+    "cloud_devops_skill": {
+      "p25": 8.78,
+      "p50": 9.45,
+      "p75": 9.93,
+      "mean": 9.26
+    },
+    "cybersecurity_skill": {
+      "p25": 3.04,
+      "p50": 4.13,
+      "p75": 5.28,
+      "mean": 4.18
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 8.0,
+      "p75": 10.0,
+      "mean": 7.75
+    },
+    "github_commits_90d": {
+      "p25": 114.0,
+      "p50": 157.0,
+      "p75": 201.0,
+      "mean": 158.48
+    },
+    "certifications_total": {
+      "p25": 2.0,
+      "p50": 3.0,
+      "p75": 4.0,
+      "mean": 3.03
+    }
+  },
+  "Embedded Systems Engineer": {
+    "cgpa": {
+      "p25": 7.48,
+      "p50": 7.95,
+      "p75": 8.49,
+      "mean": 7.97
+    },
+    "programming_skill": {
+      "p25": 6.86,
+      "p50": 7.85,
+      "p75": 8.77,
+      "mean": 7.78
+    },
+    "data_analytics_skill": {
+      "p25": 4.89,
+      "p50": 6.04,
+      "p75": 7.07,
+      "mean": 6.02
+    },
+    "data_science_ml_skill": {
+      "p25": 1.56,
+      "p50": 2.52,
+      "p75": 3.47,
+      "mean": 2.54
+    },
+    "cloud_devops_skill": {
+      "p25": 3.25,
+      "p50": 4.36,
+      "p75": 5.57,
+      "mean": 4.42
+    },
+    "cybersecurity_skill": {
+      "p25": 3.04,
+      "p50": 4.18,
+      "p75": 5.15,
+      "mean": 4.15
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 8.0,
+      "p75": 9.0,
+      "mean": 7.65
+    },
+    "github_commits_90d": {
+      "p25": 114.0,
+      "p50": 161.0,
+      "p75": 203.0,
+      "mean": 158.66
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 4.0,
+      "mean": 2.64
+    }
+  },
+  "Frontend Engineer": {
+    "cgpa": {
+      "p25": 7.34,
+      "p50": 7.83,
+      "p75": 8.29,
+      "mean": 7.81
+    },
+    "programming_skill": {
+      "p25": 4.91,
+      "p50": 6.02,
+      "p75": 7.14,
+      "mean": 6.02
+    },
+    "data_analytics_skill": {
+      "p25": 4.45,
+      "p50": 5.42,
+      "p75": 6.63,
+      "mean": 5.53
+    },
+    "data_science_ml_skill": {
+      "p25": 4.5,
+      "p50": 5.5,
+      "p75": 6.67,
+      "mean": 5.57
+    },
+    "cloud_devops_skill": {
+      "p25": 4.77,
+      "p50": 5.8,
+      "p75": 7.01,
+      "mean": 5.88
+    },
+    "cybersecurity_skill": {
+      "p25": 2.77,
+      "p50": 3.93,
+      "p75": 4.87,
+      "mean": 3.83
+    },
+    "project_count": {
+      "p25": 5.0,
+      "p50": 7.0,
+      "p75": 9.0,
+      "mean": 6.91
+    },
+    "github_commits_90d": {
+      "p25": 89.0,
+      "p50": 127.0,
+      "p75": 170.0,
+      "mean": 129.93
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 1.0,
+      "p75": 2.0,
+      "mean": 1.6
+    }
+  },
+  "Full-Stack Developer": {
+    "cgpa": {
+      "p25": 7.38,
+      "p50": 7.84,
+      "p75": 8.41,
+      "mean": 7.87
+    },
+    "programming_skill": {
+      "p25": 6.76,
+      "p50": 7.81,
+      "p75": 8.78,
+      "mean": 7.75
+    },
+    "data_analytics_skill": {
+      "p25": 4.6,
+      "p50": 5.7,
+      "p75": 6.86,
+      "mean": 5.69
+    },
+    "data_science_ml_skill": {
+      "p25": 4.37,
+      "p50": 5.53,
+      "p75": 6.73,
+      "mean": 5.54
+    },
+    "cloud_devops_skill": {
+      "p25": 4.77,
+      "p50": 5.94,
+      "p75": 7.04,
+      "mean": 5.9
+    },
+    "cybersecurity_skill": {
+      "p25": 2.86,
+      "p50": 3.88,
+      "p75": 4.85,
+      "mean": 3.85
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 8.0,
+      "p75": 10.0,
+      "mean": 7.86
+    },
+    "github_commits_90d": {
+      "p25": 101.0,
+      "p50": 145.0,
+      "p75": 196.0,
+      "mean": 148.41
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 1.0,
+      "p75": 3.0,
+      "mean": 1.7
+    }
+  },
+  "GRC Analyst": {
+    "cgpa": {
+      "p25": 7.08,
+      "p50": 7.61,
+      "p75": 8.1,
+      "mean": 7.6
+    },
+    "programming_skill": {
+      "p25": 4.84,
+      "p50": 5.87,
+      "p75": 6.84,
+      "mean": 5.85
+    },
+    "data_analytics_skill": {
+      "p25": 4.75,
+      "p50": 5.89,
+      "p75": 7.07,
+      "mean": 5.87
+    },
+    "data_science_ml_skill": {
+      "p25": 3.09,
+      "p50": 4.1,
+      "p75": 5.0,
+      "mean": 4.04
+    },
+    "cloud_devops_skill": {
+      "p25": 5.28,
+      "p50": 6.34,
+      "p75": 7.47,
+      "mean": 6.38
+    },
+    "cybersecurity_skill": {
+      "p25": 5.1,
+      "p50": 6.21,
+      "p75": 7.32,
+      "mean": 6.22
+    },
+    "project_count": {
+      "p25": 5.0,
+      "p50": 7.0,
+      "p75": 9.0,
+      "mean": 6.87
+    },
+    "github_commits_90d": {
+      "p25": 92.0,
+      "p50": 139.0,
+      "p75": 184.0,
+      "mean": 140.25
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 3.0,
+      "p75": 4.0,
+      "mean": 2.99
+    }
+  },
+  "Game Developer": {
+    "cgpa": {
+      "p25": 7.33,
+      "p50": 7.8,
+      "p75": 8.36,
+      "mean": 7.85
+    },
+    "programming_skill": {
+      "p25": 6.69,
+      "p50": 7.68,
+      "p75": 8.67,
+      "mean": 7.62
+    },
+    "data_analytics_skill": {
+      "p25": 4.61,
+      "p50": 5.67,
+      "p75": 6.78,
+      "mean": 5.67
+    },
+    "data_science_ml_skill": {
+      "p25": 4.58,
+      "p50": 5.67,
+      "p75": 6.79,
+      "mean": 5.73
+    },
+    "cloud_devops_skill": {
+      "p25": 4.82,
+      "p50": 5.96,
+      "p75": 7.12,
+      "mean": 5.97
+    },
+    "cybersecurity_skill": {
+      "p25": 2.74,
+      "p50": 3.9,
+      "p75": 5.12,
+      "mean": 3.95
+    },
+    "project_count": {
+      "p25": 4.0,
+      "p50": 6.0,
+      "p75": 8.0,
+      "mean": 5.92
+    },
+    "github_commits_90d": {
+      "p25": 75.0,
+      "p50": 114.0,
+      "p75": 164.0,
+      "mean": 121.04
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 2.02
+    }
+  },
+  "Infrastructure Engineer": {
+    "cgpa": {
+      "p25": 7.21,
+      "p50": 7.74,
+      "p75": 8.22,
+      "mean": 7.71
+    },
+    "programming_skill": {
+      "p25": 4.8,
+      "p50": 6.06,
+      "p75": 7.2,
+      "mean": 6.04
+    },
+    "data_analytics_skill": {
+      "p25": 4.68,
+      "p50": 5.96,
+      "p75": 7.21,
+      "mean": 5.94
+    },
+    "data_science_ml_skill": {
+      "p25": 3.03,
+      "p50": 4.06,
+      "p75": 5.13,
+      "mean": 4.07
+    },
+    "cloud_devops_skill": {
+      "p25": 7.12,
+      "p50": 8.09,
+      "p75": 9.06,
+      "mean": 8.03
+    },
+    "cybersecurity_skill": {
+      "p25": 2.95,
+      "p50": 3.94,
+      "p75": 4.96,
+      "mean": 3.96
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 8.0,
+      "p75": 9.0,
+      "mean": 7.61
+    },
+    "github_commits_90d": {
+      "p25": 109.0,
+      "p50": 155.0,
+      "p75": 194.25,
+      "mean": 154.09
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 2.46
+    }
+  },
+  "MLOps Engineer": {
+    "cgpa": {
+      "p25": 7.54,
+      "p50": 8.08,
+      "p75": 8.54,
+      "mean": 8.03
+    },
+    "programming_skill": {
+      "p25": 4.94,
+      "p50": 5.96,
+      "p75": 7.02,
+      "mean": 5.95
+    },
+    "data_analytics_skill": {
+      "p25": 6.75,
+      "p50": 7.64,
+      "p75": 8.65,
+      "mean": 7.67
+    },
+    "data_science_ml_skill": {
+      "p25": 4.86,
+      "p50": 6.06,
+      "p75": 7.07,
+      "mean": 5.99
+    },
+    "cloud_devops_skill": {
+      "p25": 7.34,
+      "p50": 8.27,
+      "p75": 9.13,
+      "mean": 8.17
+    },
+    "cybersecurity_skill": {
+      "p25": 1.68,
+      "p50": 2.51,
+      "p75": 3.5,
+      "mean": 2.59
+    },
+    "project_count": {
+      "p25": 7.0,
+      "p50": 9.0,
+      "p75": 11.0,
+      "mean": 8.91
+    },
+    "github_commits_90d": {
+      "p25": 138.0,
+      "p50": 178.0,
+      "p75": 225.75,
+      "mean": 180.13
+    },
+    "certifications_total": {
+      "p25": 2.0,
+      "p50": 3.0,
+      "p75": 4.0,
+      "mean": 3.27
+    }
+  },
+  "Mobile Application Developer": {
+    "cgpa": {
+      "p25": 7.37,
+      "p50": 7.84,
+      "p75": 8.28,
+      "mean": 7.82
+    },
+    "programming_skill": {
+      "p25": 6.81,
+      "p50": 7.68,
+      "p75": 8.61,
+      "mean": 7.67
+    },
+    "data_analytics_skill": {
+      "p25": 4.44,
+      "p50": 5.56,
+      "p75": 6.59,
+      "mean": 5.49
+    },
+    "data_science_ml_skill": {
+      "p25": 4.45,
+      "p50": 5.53,
+      "p75": 6.57,
+      "mean": 5.55
+    },
+    "cloud_devops_skill": {
+      "p25": 4.68,
+      "p50": 5.86,
+      "p75": 6.92,
+      "mean": 5.79
+    },
+    "cybersecurity_skill": {
+      "p25": 2.83,
+      "p50": 3.82,
+      "p75": 4.64,
+      "mean": 3.82
+    },
+    "project_count": {
+      "p25": 5.0,
+      "p50": 6.0,
+      "p75": 8.0,
+      "mean": 6.68
+    },
+    "github_commits_90d": {
+      "p25": 84.0,
+      "p50": 125.0,
+      "p75": 172.0,
+      "mean": 128.05
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 1.0,
+      "p75": 2.0,
+      "mean": 1.66
+    }
+  },
+  "Penetration Tester": {
+    "cgpa": {
+      "p25": 7.06,
+      "p50": 7.67,
+      "p75": 8.2,
+      "mean": 7.63
+    },
+    "programming_skill": {
+      "p25": 4.64,
+      "p50": 5.68,
+      "p75": 6.82,
+      "mean": 5.78
+    },
+    "data_analytics_skill": {
+      "p25": 4.86,
+      "p50": 5.84,
+      "p75": 7.03,
+      "mean": 5.92
+    },
+    "data_science_ml_skill": {
+      "p25": 2.79,
+      "p50": 3.97,
+      "p75": 5.07,
+      "mean": 3.97
+    },
+    "cloud_devops_skill": {
+      "p25": 5.15,
+      "p50": 6.26,
+      "p75": 7.31,
+      "mean": 6.22
+    },
+    "cybersecurity_skill": {
+      "p25": 8.49,
+      "p50": 9.29,
+      "p75": 9.89,
+      "mean": 9.09
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 7.0,
+      "p75": 9.0,
+      "mean": 7.4
+    },
+    "github_commits_90d": {
+      "p25": 102.25,
+      "p50": 149.0,
+      "p75": 191.0,
+      "mean": 148.68
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 2.28
+    }
+  },
+  "Performance Test Engineer": {
+    "cgpa": {
+      "p25": 7.03,
+      "p50": 7.56,
+      "p75": 8.01,
+      "mean": 7.53
+    },
+    "programming_skill": {
+      "p25": 4.98,
+      "p50": 6.05,
+      "p75": 7.05,
+      "mean": 6.0
+    },
+    "data_analytics_skill": {
+      "p25": 2.97,
+      "p50": 3.97,
+      "p75": 5.12,
+      "mean": 4.02
+    },
+    "data_science_ml_skill": {
+      "p25": 1.55,
+      "p50": 2.53,
+      "p75": 3.4,
+      "mean": 2.53
+    },
+    "cloud_devops_skill": {
+      "p25": 3.37,
+      "p50": 4.34,
+      "p75": 5.34,
+      "mean": 4.38
+    },
+    "cybersecurity_skill": {
+      "p25": 1.52,
+      "p50": 2.51,
+      "p75": 3.32,
+      "mean": 2.47
+    },
+    "project_count": {
+      "p25": 5.0,
+      "p50": 7.0,
+      "p75": 9.0,
+      "mean": 6.74
+    },
+    "github_commits_90d": {
+      "p25": 96.5,
+      "p50": 139.0,
+      "p75": 182.0,
+      "mean": 140.22
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 2.25
+    }
+  },
+  "Product Analyst": {
+    "cgpa": {
+      "p25": 7.19,
+      "p50": 7.74,
+      "p75": 8.26,
+      "mean": 7.72
+    },
+    "programming_skill": {
+      "p25": 3.21,
+      "p50": 4.27,
+      "p75": 5.34,
+      "mean": 4.26
+    },
+    "data_analytics_skill": {
+      "p25": 6.46,
+      "p50": 7.38,
+      "p75": 8.34,
+      "mean": 7.37
+    },
+    "data_science_ml_skill": {
+      "p25": 1.45,
+      "p50": 2.32,
+      "p75": 3.25,
+      "mean": 2.36
+    },
+    "cloud_devops_skill": {
+      "p25": 1.73,
+      "p50": 2.69,
+      "p75": 3.62,
+      "mean": 2.66
+    },
+    "cybersecurity_skill": {
+      "p25": 1.46,
+      "p50": 2.4,
+      "p75": 3.27,
+      "mean": 2.43
+    },
+    "project_count": {
+      "p25": 5.0,
+      "p50": 7.0,
+      "p75": 9.0,
+      "mean": 7.0
+    },
+    "github_commits_90d": {
+      "p25": 93.0,
+      "p50": 142.0,
+      "p75": 186.0,
+      "mean": 141.02
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 2.2
+    }
+  },
+  "QA & Automation Test Engineer": {
+    "cgpa": {
+      "p25": 6.99,
+      "p50": 7.53,
+      "p75": 7.99,
+      "mean": 7.49
+    },
+    "programming_skill": {
+      "p25": 4.68,
+      "p50": 5.88,
+      "p75": 6.99,
+      "mean": 5.81
+    },
+    "data_analytics_skill": {
+      "p25": 2.86,
+      "p50": 3.88,
+      "p75": 4.94,
+      "mean": 3.88
+    },
+    "data_science_ml_skill": {
+      "p25": 1.37,
+      "p50": 2.26,
+      "p75": 3.2,
+      "mean": 2.32
+    },
+    "cloud_devops_skill": {
+      "p25": 3.07,
+      "p50": 4.17,
+      "p75": 5.17,
+      "mean": 4.14
+    },
+    "cybersecurity_skill": {
+      "p25": 1.35,
+      "p50": 2.31,
+      "p75": 3.23,
+      "mean": 2.34
+    },
+    "project_count": {
+      "p25": 4.0,
+      "p50": 6.0,
+      "p75": 8.0,
+      "mean": 6.28
+    },
+    "github_commits_90d": {
+      "p25": 80.0,
+      "p50": 118.0,
+      "p75": 165.0,
+      "mean": 124.26
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 1.98
+    }
+  },
+  "Security Operations Analyst": {
+    "cgpa": {
+      "p25": 7.14,
+      "p50": 7.65,
+      "p75": 8.15,
+      "mean": 7.64
+    },
+    "programming_skill": {
+      "p25": 4.86,
+      "p50": 5.97,
+      "p75": 7.2,
+      "mean": 6.0
+    },
+    "data_analytics_skill": {
+      "p25": 4.76,
+      "p50": 5.84,
+      "p75": 6.96,
+      "mean": 5.86
+    },
+    "data_science_ml_skill": {
+      "p25": 3.04,
+      "p50": 4.08,
+      "p75": 5.19,
+      "mean": 4.12
+    },
+    "cloud_devops_skill": {
+      "p25": 5.3,
+      "p50": 6.38,
+      "p75": 7.59,
+      "mean": 6.37
+    },
+    "cybersecurity_skill": {
+      "p25": 7.06,
+      "p50": 7.99,
+      "p75": 8.89,
+      "mean": 7.93
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 8.0,
+      "p75": 9.0,
+      "mean": 7.58
+    },
+    "github_commits_90d": {
+      "p25": 110.0,
+      "p50": 154.0,
+      "p75": 201.0,
+      "mean": 155.02
+    },
+    "certifications_total": {
+      "p25": 2.0,
+      "p50": 3.0,
+      "p75": 4.0,
+      "mean": 2.9
+    }
+  },
+  "Solutions Architect": {
+    "cgpa": {
+      "p25": 7.39,
+      "p50": 7.86,
+      "p75": 8.36,
+      "mean": 7.89
+    },
+    "programming_skill": {
+      "p25": 5.22,
+      "p50": 6.28,
+      "p75": 7.4,
+      "mean": 6.29
+    },
+    "data_analytics_skill": {
+      "p25": 5.0,
+      "p50": 6.03,
+      "p75": 7.07,
+      "mean": 5.99
+    },
+    "data_science_ml_skill": {
+      "p25": 3.13,
+      "p50": 4.21,
+      "p75": 5.27,
+      "mean": 4.19
+    },
+    "cloud_devops_skill": {
+      "p25": 7.4,
+      "p50": 8.31,
+      "p75": 9.26,
+      "mean": 8.26
+    },
+    "cybersecurity_skill": {
+      "p25": 3.12,
+      "p50": 4.27,
+      "p75": 5.24,
+      "mean": 4.21
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 8.0,
+      "p75": 10.0,
+      "mean": 8.18
+    },
+    "github_commits_90d": {
+      "p25": 128.75,
+      "p50": 172.0,
+      "p75": 216.0,
+      "mean": 170.29
+    },
+    "certifications_total": {
+      "p25": 2.0,
+      "p50": 3.0,
+      "p75": 5.0,
+      "mean": 3.63
+    }
+  },
+  "Systems Software Engineer": {
+    "cgpa": {
+      "p25": 7.29,
+      "p50": 7.86,
+      "p75": 8.37,
+      "mean": 7.84
+    },
+    "programming_skill": {
+      "p25": 6.94,
+      "p50": 7.83,
+      "p75": 8.77,
+      "mean": 7.8
+    },
+    "data_analytics_skill": {
+      "p25": 4.68,
+      "p50": 5.83,
+      "p75": 6.94,
+      "mean": 5.78
+    },
+    "data_science_ml_skill": {
+      "p25": 4.59,
+      "p50": 5.75,
+      "p75": 6.83,
+      "mean": 5.75
+    },
+    "cloud_devops_skill": {
+      "p25": 4.77,
+      "p50": 5.94,
+      "p75": 7.09,
+      "mean": 5.93
+    },
+    "cybersecurity_skill": {
+      "p25": 2.81,
+      "p50": 3.88,
+      "p75": 4.93,
+      "mean": 3.86
+    },
+    "project_count": {
+      "p25": 5.0,
+      "p50": 6.0,
+      "p75": 8.0,
+      "mean": 6.43
+    },
+    "github_commits_90d": {
+      "p25": 82.0,
+      "p50": 121.0,
+      "p75": 167.0,
+      "mean": 127.94
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 3.0,
+      "mean": 2.0
+    }
+  },
+  "Test Architect": {
+    "cgpa": {
+      "p25": 7.07,
+      "p50": 7.53,
+      "p75": 8.09,
+      "mean": 7.56
+    },
+    "programming_skill": {
+      "p25": 5.02,
+      "p50": 6.2,
+      "p75": 7.36,
+      "mean": 6.22
+    },
+    "data_analytics_skill": {
+      "p25": 3.18,
+      "p50": 4.15,
+      "p75": 5.22,
+      "mean": 4.2
+    },
+    "data_science_ml_skill": {
+      "p25": 1.71,
+      "p50": 2.58,
+      "p75": 3.51,
+      "mean": 2.64
+    },
+    "cloud_devops_skill": {
+      "p25": 3.33,
+      "p50": 4.37,
+      "p75": 5.48,
+      "mean": 4.42
+    },
+    "cybersecurity_skill": {
+      "p25": 1.71,
+      "p50": 2.67,
+      "p75": 3.5,
+      "mean": 2.63
+    },
+    "project_count": {
+      "p25": 6.0,
+      "p50": 8.0,
+      "p75": 10.0,
+      "mean": 7.75
+    },
+    "github_commits_90d": {
+      "p25": 125.0,
+      "p50": 166.0,
+      "p75": 212.0,
+      "mean": 166.65
+    },
+    "certifications_total": {
+      "p25": 2.0,
+      "p50": 3.0,
+      "p75": 4.0,
+      "mean": 2.89
+    }
+  },
+  "UI Designer": {
+    "cgpa": {
+      "p25": 7.26,
+      "p50": 7.78,
+      "p75": 8.3,
+      "mean": 7.78
+    },
+    "programming_skill": {
+      "p25": 2.82,
+      "p50": 3.99,
+      "p75": 5.03,
+      "mean": 3.97
+    },
+    "data_analytics_skill": {
+      "p25": 4.49,
+      "p50": 5.58,
+      "p75": 6.7,
+      "mean": 5.57
+    },
+    "data_science_ml_skill": {
+      "p25": 1.27,
+      "p50": 2.29,
+      "p75": 3.01,
+      "mean": 2.23
+    },
+    "cloud_devops_skill": {
+      "p25": 1.4,
+      "p50": 2.33,
+      "p75": 3.13,
+      "mean": 2.35
+    },
+    "cybersecurity_skill": {
+      "p25": 1.4,
+      "p50": 2.23,
+      "p75": 3.15,
+      "mean": 2.31
+    },
+    "project_count": {
+      "p25": 4.0,
+      "p50": 6.0,
+      "p75": 8.0,
+      "mean": 6.17
+    },
+    "github_commits_90d": {
+      "p25": 71.0,
+      "p50": 109.5,
+      "p75": 159.0,
+      "mean": 116.57
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 1.0,
+      "p75": 2.0,
+      "mean": 1.68
+    }
+  },
+  "UX Designer": {
+    "cgpa": {
+      "p25": 7.38,
+      "p50": 7.85,
+      "p75": 8.34,
+      "mean": 7.85
+    },
+    "programming_skill": {
+      "p25": 2.8,
+      "p50": 3.86,
+      "p75": 4.93,
+      "mean": 3.9
+    },
+    "data_analytics_skill": {
+      "p25": 4.47,
+      "p50": 5.57,
+      "p75": 6.73,
+      "mean": 5.58
+    },
+    "data_science_ml_skill": {
+      "p25": 1.17,
+      "p50": 2.16,
+      "p75": 3.19,
+      "mean": 2.23
+    },
+    "cloud_devops_skill": {
+      "p25": 1.39,
+      "p50": 2.34,
+      "p75": 3.26,
+      "mean": 2.36
+    },
+    "cybersecurity_skill": {
+      "p25": 1.27,
+      "p50": 2.17,
+      "p75": 3.11,
+      "mean": 2.21
+    },
+    "project_count": {
+      "p25": 4.0,
+      "p50": 6.0,
+      "p75": 7.0,
+      "mean": 5.85
+    },
+    "github_commits_90d": {
+      "p25": 69.0,
+      "p50": 106.0,
+      "p75": 154.0,
+      "mean": 113.87
+    },
+    "certifications_total": {
+      "p25": 1.0,
+      "p50": 1.0,
+      "p75": 2.0,
+      "mean": 1.64
+    }
+  }
+}

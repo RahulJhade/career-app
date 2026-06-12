@@ -1,0 +1,272 @@
+{
+  "API Engineer": {
+    "Software Dev": 7.47,
+    "Data & AI": 5.2,
+    "Cloud/DevOps": 5.97,
+    "Cybersecurity": 3.15,
+    "UI/UX": 5.89,
+    "QA/Testing": 5.79,
+    "Systems/Infra": 4.03
+  },
+  "Application Support Engineer": {
+    "Software Dev": 5.14,
+    "Data & AI": 5.06,
+    "Cloud/DevOps": 5.82,
+    "Cybersecurity": 3.12,
+    "UI/UX": 5.75,
+    "QA/Testing": 5.64,
+    "Systems/Infra": 3.97
+  },
+  "Associate Product Manager": {
+    "Software Dev": 4.78,
+    "Data & AI": 4.05,
+    "Cloud/DevOps": 2.54,
+    "Cybersecurity": 2.48,
+    "UI/UX": 8.63,
+    "QA/Testing": 4.1,
+    "Systems/Infra": 2.42
+  },
+  "Backend Engineer": {
+    "Software Dev": 6.47,
+    "Data & AI": 5.06,
+    "Cloud/DevOps": 5.83,
+    "Cybersecurity": 3.0,
+    "UI/UX": 5.64,
+    "QA/Testing": 5.64,
+    "Systems/Infra": 3.88
+  },
+  "Cloud Architect": {
+    "Software Dev": 5.37,
+    "Data & AI": 4.9,
+    "Cloud/DevOps": 8.32,
+    "Cybersecurity": 3.49,
+    "UI/UX": 2.69,
+    "QA/Testing": 6.08,
+    "Systems/Infra": 5.12
+  },
+  "Cloud Engineer & Platform/SRE": {
+    "Software Dev": 4.84,
+    "Data & AI": 4.76,
+    "Cloud/DevOps": 8.18,
+    "Cybersecurity": 3.37,
+    "UI/UX": 2.59,
+    "QA/Testing": 5.93,
+    "Systems/Infra": 4.99
+  },
+  "Cybersecurity & Cloud Security Engineer": {
+    "Software Dev": 4.59,
+    "Data & AI": 4.7,
+    "Cloud/DevOps": 7.23,
+    "Cybersecurity": 7.33,
+    "UI/UX": 2.59,
+    "QA/Testing": 5.87,
+    "Systems/Infra": 4.98
+  },
+  "Data & Analytics Engineer": {
+    "Software Dev": 5.28,
+    "Data & AI": 7.49,
+    "Cloud/DevOps": 6.35,
+    "Cybersecurity": 2.4,
+    "UI/UX": 4.0,
+    "QA/Testing": 3.93,
+    "Systems/Infra": 3.16
+  },
+  "Data Analyst": {
+    "Software Dev": 4.86,
+    "Data & AI": 6.0,
+    "Cloud/DevOps": 6.1,
+    "Cybersecurity": 2.17,
+    "UI/UX": 3.78,
+    "QA/Testing": 3.72,
+    "Systems/Infra": 2.99
+  },
+  "Data Scientist / ML / AI Engineer": {
+    "Software Dev": 5.27,
+    "Data & AI": 7.06,
+    "Cloud/DevOps": 6.28,
+    "Cybersecurity": 2.35,
+    "UI/UX": 3.84,
+    "QA/Testing": 3.9,
+    "Systems/Infra": 3.02
+  },
+  "Database Administrator": {
+    "Software Dev": 5.68,
+    "Data & AI": 5.4,
+    "Cloud/DevOps": 4.59,
+    "Cybersecurity": 3.42,
+    "UI/UX": 2.61,
+    "QA/Testing": 6.09,
+    "Systems/Infra": 6.09
+  },
+  "DevOps Engineer": {
+    "Software Dev": 4.62,
+    "Data & AI": 4.68,
+    "Cloud/DevOps": 9.26,
+    "Cybersecurity": 3.38,
+    "UI/UX": 2.5,
+    "QA/Testing": 5.83,
+    "Systems/Infra": 4.95
+  },
+  "Embedded Systems Engineer": {
+    "Software Dev": 5.99,
+    "Data & AI": 4.84,
+    "Cloud/DevOps": 4.42,
+    "Cybersecurity": 3.35,
+    "UI/UX": 2.57,
+    "QA/Testing": 6.01,
+    "Systems/Infra": 7.37
+  },
+  "Frontend Engineer": {
+    "Software Dev": 6.39,
+    "Data & AI": 4.94,
+    "Cloud/DevOps": 5.88,
+    "Cybersecurity": 3.02,
+    "UI/UX": 7.45,
+    "QA/Testing": 5.51,
+    "Systems/Infra": 3.86
+  },
+  "Full-Stack Developer": {
+    "Software Dev": 6.53,
+    "Data & AI": 5.04,
+    "Cloud/DevOps": 5.9,
+    "Cybersecurity": 3.02,
+    "UI/UX": 6.0,
+    "QA/Testing": 5.55,
+    "Systems/Infra": 3.89
+  },
+  "GRC Analyst": {
+    "Software Dev": 4.62,
+    "Data & AI": 4.63,
+    "Cloud/DevOps": 6.38,
+    "Cybersecurity": 6.04,
+    "UI/UX": 2.58,
+    "QA/Testing": 5.84,
+    "Systems/Infra": 4.91
+  },
+  "Game Developer": {
+    "Software Dev": 6.48,
+    "Data & AI": 5.09,
+    "Cloud/DevOps": 5.97,
+    "Cybersecurity": 3.08,
+    "UI/UX": 5.95,
+    "QA/Testing": 5.75,
+    "Systems/Infra": 4.04
+  },
+  "Infrastructure Engineer": {
+    "Software Dev": 4.65,
+    "Data & AI": 4.67,
+    "Cloud/DevOps": 8.03,
+    "Cybersecurity": 3.21,
+    "UI/UX": 2.48,
+    "QA/Testing": 5.89,
+    "Systems/Infra": 5.47
+  },
+  "MLOps Engineer": {
+    "Software Dev": 5.23,
+    "Data & AI": 6.56,
+    "Cloud/DevOps": 8.17,
+    "Cybersecurity": 2.54,
+    "UI/UX": 4.14,
+    "QA/Testing": 4.11,
+    "Systems/Infra": 3.21
+  },
+  "Mobile Application Developer": {
+    "Software Dev": 7.09,
+    "Data & AI": 4.93,
+    "Cloud/DevOps": 5.79,
+    "Cybersecurity": 3.0,
+    "UI/UX": 5.51,
+    "QA/Testing": 5.57,
+    "Systems/Infra": 3.92
+  },
+  "Penetration Tester": {
+    "Software Dev": 4.45,
+    "Data & AI": 4.67,
+    "Cloud/DevOps": 6.22,
+    "Cybersecurity": 7.54,
+    "UI/UX": 2.42,
+    "QA/Testing": 5.87,
+    "Systems/Infra": 4.88
+  },
+  "Performance Test Engineer": {
+    "Software Dev": 5.52,
+    "Data & AI": 2.98,
+    "Cloud/DevOps": 4.38,
+    "Cybersecurity": 2.44,
+    "UI/UX": 3.92,
+    "QA/Testing": 7.95,
+    "Systems/Infra": 4.05
+  },
+  "Product Analyst": {
+    "Software Dev": 4.82,
+    "Data & AI": 4.56,
+    "Cloud/DevOps": 2.66,
+    "Cybersecurity": 2.4,
+    "UI/UX": 8.66,
+    "QA/Testing": 3.92,
+    "Systems/Infra": 2.35
+  },
+  "QA & Automation Test Engineer": {
+    "Software Dev": 5.37,
+    "Data & AI": 2.85,
+    "Cloud/DevOps": 4.14,
+    "Cybersecurity": 2.3,
+    "UI/UX": 3.89,
+    "QA/Testing": 8.85,
+    "Systems/Infra": 4.0
+  },
+  "Security Operations Analyst": {
+    "Software Dev": 4.59,
+    "Data & AI": 4.71,
+    "Cloud/DevOps": 6.37,
+    "Cybersecurity": 8.07,
+    "UI/UX": 2.51,
+    "QA/Testing": 5.91,
+    "Systems/Infra": 4.69
+  },
+  "Solutions Architect": {
+    "Software Dev": 5.66,
+    "Data & AI": 4.81,
+    "Cloud/DevOps": 8.26,
+    "Cybersecurity": 3.37,
+    "UI/UX": 2.67,
+    "QA/Testing": 6.07,
+    "Systems/Infra": 5.1
+  },
+  "Systems Software Engineer": {
+    "Software Dev": 6.18,
+    "Data & AI": 5.14,
+    "Cloud/DevOps": 5.93,
+    "Cybersecurity": 3.09,
+    "UI/UX": 5.78,
+    "QA/Testing": 5.66,
+    "Systems/Infra": 4.08
+  },
+  "Test Architect": {
+    "Software Dev": 5.95,
+    "Data & AI": 3.2,
+    "Cloud/DevOps": 4.42,
+    "Cybersecurity": 2.62,
+    "UI/UX": 4.31,
+    "QA/Testing": 8.02,
+    "Systems/Infra": 4.26
+  },
+  "UI Designer": {
+    "Software Dev": 4.62,
+    "Data & AI": 3.84,
+    "Cloud/DevOps": 2.35,
+    "Cybersecurity": 2.3,
+    "UI/UX": 8.57,
+    "QA/Testing": 3.96,
+    "Systems/Infra": 2.23
+  },
+  "UX Designer": {
+    "Software Dev": 4.58,
+    "Data & AI": 3.88,
+    "Cloud/DevOps": 2.36,
+    "Cybersecurity": 2.2,
+    "UI/UX": 8.5,
+    "QA/Testing": 3.82,
+    "Systems/Infra": 2.11
+  }
+}

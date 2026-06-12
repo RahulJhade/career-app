@@ -1,0 +1,163 @@
+{
+  "programming_skill": {
+    "title": "Strengthen core programming",
+    "resource": "CS50 by Harvard (free, 12 weeks)",
+    "url": "https://cs50.harvard.edu/x",
+    "time": "12 weeks",
+    "tag": "Course"
+  },
+  "data_science_ml_skill": {
+    "title": "Learn Machine Learning hands-on",
+    "resource": "fast.ai Practical Deep Learning (free)",
+    "url": "https://course.fast.ai",
+    "time": "7 hours",
+    "tag": "Course"
+  },
+  "data_analytics_skill": {
+    "title": "Build data analytics skills",
+    "resource": "Google Data Analytics Certificate (Coursera)",
+    "url": "https://coursera.org/professional-certificates/google-data-analytics",
+    "time": "6 months",
+    "tag": "Certificate"
+  },
+  "cloud_devops_skill": {
+    "title": "Get AWS Cloud certified",
+    "resource": "AWS Cloud Practitioner Essentials (free)",
+    "url": "https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials",
+    "time": "6 hours",
+    "tag": "Certificate"
+  },
+  "cybersecurity_skill": {
+    "title": "Start cybersecurity fundamentals",
+    "resource": "Google Cybersecurity Certificate (Coursera)",
+    "url": "https://coursera.org/professional-certificates/google-cybersecurity",
+    "time": "6 months",
+    "tag": "Certificate"
+  },
+  "web_dev_skill": {
+    "title": "Build full-stack web skills",
+    "resource": "The Odin Project (free, open source)",
+    "url": "https://www.theodinproject.com",
+    "time": "Self-paced",
+    "tag": "Course"
+  },
+  "mobile_dev_skill": {
+    "title": "Learn Flutter app development",
+    "resource": "Flutter Official Docs & Codelab (free)",
+    "url": "https://flutter.dev/learn",
+    "time": "2 weeks",
+    "tag": "Docs"
+  },
+  "db_sql_skill": {
+    "title": "Master SQL and databases",
+    "resource": "SQLZoo + Mode SQL Tutorial (free)",
+    "url": "https://sqlzoo.net",
+    "time": "1 week",
+    "tag": "Practice"
+  },
+  "system_design_score": {
+    "title": "Study system design concepts",
+    "resource": "System Design Primer (GitHub, free)",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "time": "4 weeks",
+    "tag": "Reading"
+  },
+  "ui_ux_design_skill": {
+    "title": "Learn UI/UX design fundamentals",
+    "resource": "Google UX Design Certificate (Coursera)",
+    "url": "https://coursera.org/professional-certificates/google-ux-design",
+    "time": "6 months",
+    "tag": "Certificate"
+  },
+  "qa_testing_skill": {
+    "title": "Learn test automation",
+    "resource": "Selenium WebDriver with Java (Udemy free)",
+    "url": "https://www.selenium.dev/documentation",
+    "time": "2 weeks",
+    "tag": "Practice"
+  },
+  "api_design_skill": {
+    "title": "Build and design REST APIs",
+    "resource": "REST API Design Best Practices (freeCodeCamp)",
+    "url": "https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples",
+    "time": "3 days",
+    "tag": "Reading"
+  },
+  "data_modeling_skill": {
+    "title": "Learn data modeling & warehousing",
+    "resource": "dbt Learn \u2014 free fundamentals course",
+    "url": "https://courses.getdbt.com/courses/fundamentals",
+    "time": "5 hours",
+    "tag": "Course"
+  },
+  "embedded_c_cpp_skill": {
+    "title": "Start embedded systems with Arduino",
+    "resource": "Arduino Official Tutorials (free)",
+    "url": "https://docs.arduino.cc/tutorials",
+    "time": "Self-paced",
+    "tag": "Practice"
+  },
+  "siem_experience_score": {
+    "title": "Get hands-on with SIEM tools",
+    "resource": "Splunk Free Training (Splunk Education)",
+    "url": "https://education.splunk.com/free",
+    "time": "4 hours",
+    "tag": "Course"
+  },
+  "project_count": {
+    "title": "Build an end-to-end project this week",
+    "resource": "Kaggle \u2014 pick any competition & submit",
+    "url": "https://www.kaggle.com/competitions",
+    "time": "1 week",
+    "tag": "Project"
+  },
+  "github_commits_90d": {
+    "title": "Start coding daily on GitHub",
+    "resource": "GitHub Learning Lab \u2014 build streak habit",
+    "url": "https://skills.github.com",
+    "time": "Daily 30 min",
+    "tag": "Habit"
+  },
+  "certifications_total": {
+    "title": "Earn a free certification",
+    "resource": "Google Career Certificates on Coursera",
+    "url": "https://grow.google/certificates",
+    "time": "3\u20136 months",
+    "tag": "Certificate"
+  },
+  "internship_experience_count": {
+    "title": "Apply for internships this week",
+    "resource": "Internshala \u2014 India's top internship portal",
+    "url": "https://internshala.com",
+    "time": "Apply now",
+    "tag": "Apply"
+  },
+  "cgpa": {
+    "title": "Improve academic performance",
+    "resource": "MIT OpenCourseWare \u2014 supplement your coursework",
+    "url": "https://ocw.mit.edu",
+    "time": "Self-paced",
+    "tag": "Study"
+  },
+  "networking_sysadmin_skill": {
+    "title": "Learn computer networking",
+    "resource": "Cisco Networking Academy \u2014 free courses",
+    "url": "https://skillsforall.com",
+    "time": "4 weeks",
+    "tag": "Course"
+  },
+  "cloud_arch_patterns_score": {
+    "title": "Study cloud architecture patterns",
+    "resource": "AWS Well-Architected Framework (free)",
+    "url": "https://aws.amazon.com/architecture/well-architected",
+    "time": "1 week",
+    "tag": "Reading"
+  },
+  "devops_docker": {
+    "title": "Learn Docker hands-on",
+    "resource": "Play with Docker \u2014 free browser lab",
+    "url": "https://labs.play-with-docker.com",
+    "time": "3 days",
+    "tag": "Practice"
+  }
+}

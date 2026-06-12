@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>CareerAI — Skill Progress Tracker</title>
+<meta name="description" content="Track your career readiness and skill growth over time with CareerAI Progress Tracker."/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+:root{--bg:#050811;--sf:#0d1117;--sf2:#161b22;--sf3:#1e2631;--bd:rgba(255,255,255,0.07);--tx:#e8edf5;--mt:#7d8997;--ac:#4f8ef7;--ac2:#a855f7;--ac3:#06d6a0;--dg:#ef4444;--wn:#f59e0b;--orb-opacity:1;}
+[data-theme="light"]{--bg:#f4f6fb;--sf:#ffffff;--sf2:#f0f2f7;--sf3:#e4e7ef;--bd:rgba(0,0,0,0.08);--tx:#1a1d26;--mt:#5a6270;--ac:#3b72d9;--ac2:#8b3fd9;--ac3:#059b75;--dg:#d93636;--wn:#d48a08;--orb-opacity:0.35;}
+[data-theme="light"] header{background:rgba(244,246,251,0.92)!important;box-shadow:0 2px 20px rgba(0,0,0,0.06);}
+[data-theme="light"] .logo{-webkit-text-fill-color:transparent;}
+[data-theme="light"] select{background:var(--sf2)!important;border-color:var(--bd)!important;color:var(--tx)!important;}
+.theme-toggle{background:var(--sf2);border:1px solid var(--bd);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s ease;font-size:17px;flex-shrink:0;}
+.theme-toggle:hover{border-color:rgba(79,142,247,0.4);transform:scale(1.08);}
+.theme-toggle .t-icon{transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1);}
+.theme-toggle .t-icon.spin{transform:rotate(360deg);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--tx);}
+.bgrid{position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(79,142,247,0.03)1px,transparent 1px),linear-gradient(90deg,rgba(79,142,247,0.03)1px,transparent 1px);background-size:48px 48px;pointer-events:none;}
+.w{position:relative;z-index:1;}
+header{padding:18px 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--bd);backdrop-filter:blur(10px);background:rgba(5,8,17,0.82);position:sticky;top:0;z-index:100;}
+.logo{font-family:"Syne",sans-serif;font-size:22px;font-weight:800;background:linear-gradient(135deg,var(--ac),var(--ac2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.navs{display:flex;gap:8px;}
+.nb{background:var(--sf2);border:1px solid var(--bd);color:var(--mt);padding:7px 14px;border-radius:8px;font-family:"DM Sans",sans-serif;font-size:13px;cursor:pointer;text-decoration:none;display:flex;align-items:center;gap:6px;transition:all 0.2s;}
+.nb:hover{color:var(--tx);border-color:rgba(79,142,247,0.3);}
+.nb.on{color:var(--ac);border-color:rgba(79,142,247,0.4);background:rgba(79,142,247,0.08);}
+main{max-width:1100px;margin:0 auto;padding:40px 48px 80px;}
+h1{font-family:"Syne",sans-serif;font-size:28px;font-weight:800;letter-spacing:-0.8px;margin-bottom:6px;}
+.sub{color:var(--mt);font-size:14px;margin-bottom:28px;line-height:1.6;}
+/* user picker */
+.picker-row{display:flex;gap:12px;align-items:center;margin-bottom:28px;flex-wrap:wrap;}
+.picker-row select{background:var(--sf2);border:1px solid var(--bd);color:var(--tx);border-radius:9px;padding:10px 16px;font-family:"DM Sans",sans-serif;font-size:14px;outline:none;min-width:220px;}
+.picker-row select:focus{border-color:var(--ac);}
+.load-btn{background:linear-gradient(135deg,var(--ac),var(--ac2));color:white;border:none;padding:10px 28px;border-radius:9px;font-family:"Syne",sans-serif;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;}
+.load-btn:hover{transform:translateY(-1px);box-shadow:0 6px 22px rgba(79,142,247,0.35);}
+/* empty state */
+.empty-state{text-align:center;padding:80px 20px;}
+.empty-icon{font-size:48px;margin-bottom:14px;}
+.empty-title{font-family:"Syne",sans-serif;font-size:18px;font-weight:700;margin-bottom:8px;}
+.empty-sub{font-size:13px;color:var(--mt);line-height:1.6;max-width:380px;margin:0 auto;}
+/* stats row */
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px;}
+.stat-card{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:18px 20px;text-align:center;transition:border-color 0.2s;}
+.stat-card:hover{border-color:rgba(79,142,247,0.3);}
+.stat-label{font-size:10px;color:var(--mt);text-transform:uppercase;letter-spacing:0.7px;font-weight:600;margin-bottom:7px;}
+.stat-value{font-family:"Syne",sans-serif;font-size:26px;font-weight:800;line-height:1;}
+.stat-sub{font-size:11px;color:var(--mt);margin-top:5px;}
+.stat-delta{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;margin-top:6px;}
+.delta-up{background:rgba(6,214,160,0.12);color:var(--ac3);}
+.delta-down{background:rgba(239,68,68,0.12);color:var(--dg);}
+.delta-same{background:var(--sf3);color:var(--mt);}
+/* chart containers */
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px;}
+.chart-card{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:20px 24px;}
+.chart-card.full{grid-column:1/-1;}
+.chart-card h3{font-family:"Syne",sans-serif;font-size:14px;font-weight:700;margin-bottom:4px;}
+.chart-card .chart-sub{font-size:11px;color:var(--mt);margin-bottom:16px;}
+.chart-wrap{position:relative;height:280px;}
+/* timeline */
+.timeline{margin-top:24px;}
+.timeline h3{font-family:"Syne",sans-serif;font-size:15px;font-weight:700;margin-bottom:16px;}
+.tl{position:relative;padding-left:28px;}
+.tl::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--ac),var(--ac2),var(--ac3));border-radius:99px;opacity:0.3;}
+.tl-item{position:relative;margin-bottom:12px;animation:ci 0.35s ease both;}
+@keyframes ci{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.tl-dot{position:absolute;left:-28px;top:14px;width:18px;height:18px;border-radius:50%;border:2.5px solid var(--ac);background:var(--sf);display:flex;align-items:center;justify-content:center;z-index:2;}
+.tl-dot-inner{width:7px;height:7px;border-radius:50%;background:var(--ac);}
+.tl-card{background:var(--sf2);border:1px solid var(--bd);border-radius:11px;padding:14px 16px;transition:all 0.2s;}
+.tl-card:hover{border-color:rgba(79,142,247,0.3);transform:translateX(3px);}
+.tl-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;flex-wrap:wrap;gap:8px;}
+.tl-role{font-family:"Syne",sans-serif;font-size:14px;font-weight:700;}
+.tl-conf{font-family:"Syne",sans-serif;font-size:13px;font-weight:800;}
+.tl-meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+.tl-badge{font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;white-space:nowrap;}
+.tl-time{font-size:10px;color:var(--mt);}
+.tl-skills{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px;}
+.tl-skill{font-size:10px;background:var(--sf);border:1px solid var(--bd);padding:2px 8px;border-radius:99px;color:var(--mt);}
+footer{border-top:1px solid var(--bd);padding:24px 48px;color:var(--mt);font-size:12px;text-align:center;}
+@media(max-width:768px){
+  header,main,footer{padding-left:16px;padding-right:16px;}
+  .stats-row{grid-template-columns:1fr 1fr;}
+  .chart-grid{grid-template-columns:1fr;}
+}
+@media(max-width:480px){.stats-row{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="bgrid"></div>
+<div class="w">
+<header>
+  <div class="logo">CareerAI ✦</div>
+  <nav class="navs">
+    <a class="nb" href="/">🎯 Predict</a>
+    <a class="nb" href="/dashboard">📊 Analytics</a>
+    <a class="nb" href="/compare">⚖️ Compare</a>
+    <a class="nb on" href="/progress">📈 Progress</a>
+  </nav>
+  <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle light/dark mode">
+    <span class="t-icon" id="themeIcon">🌙</span>
+  </button>
+</header>
+
+<main>
+  <h1>📈 Skill Progress Tracker</h1>
+  <p class="sub">Track your career readiness, confidence, and skill growth over time.<br/>Save snapshots after each prediction to watch your progress unfold.</p>
+
+  <div class="picker-row">
+    <select id="namePicker">
+      <option value="">— Select your name —</option>
+    </select>
+    <button class="load-btn" onclick="loadProgress()">📈 Load Progress</button>
+  </div>
+
+  <div id="content">
+    <div class="empty-state" id="emptyState">
+      <div class="empty-icon">📊</div>
+      <div class="empty-title">No progress data yet</div>
+      <div class="empty-sub">Go to the 🎯 Predict page, run a prediction, enter your name, and click <b>"📈 Save to Progress Tracker"</b> to start tracking your growth.</div>
+    </div>
+  </div>
+</main>
+
+<footer>CareerAI — B.Tech Capstone Project · Skill Progress Tracker</footer>
+</div>
+
+<script>
+// ── Theme ────────────────────────────────────────────────────────────────────
+(function initTheme(){
+  const saved=localStorage.getItem('careerai-theme');
+  if(saved==='light') document.documentElement.setAttribute('data-theme','light');
+})();
+function toggleTheme(){
+  const html=document.documentElement;
+  const icon=document.getElementById('themeIcon');
+  icon.classList.add('spin');
+  setTimeout(()=>icon.classList.remove('spin'),450);
+  if(html.getAttribute('data-theme')==='light'){
+    html.removeAttribute('data-theme');
+    localStorage.setItem('careerai-theme','dark');
+    icon.textContent='🌙';
+  } else {
+    html.setAttribute('data-theme','light');
+    localStorage.setItem('careerai-theme','light');
+    icon.textContent='☀️';
+  }
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  const icon=document.getElementById('themeIcon');
+  if(icon) icon.textContent=document.documentElement.getAttribute('data-theme')==='light'?'☀️':'🌙';
+  fetchNames();
+});
+
+const SKILL_LABELS = {
+  programming_skill:'Programming', web_dev_skill:'Web Dev', data_science_ml_skill:'DS/ML',
+  data_analytics_skill:'Data Analytics', cloud_devops_skill:'Cloud/DevOps',
+  cybersecurity_skill:'Cybersecurity', ui_ux_design_skill:'UI/UX',
+  mobile_dev_skill:'Mobile', db_sql_skill:'Database/SQL',
+  system_design_score:'System Design', api_design_skill:'API Design',
+  qa_testing_skill:'QA/Testing', embedded_c_cpp_skill:'Embedded C++',
+};
+
+const BAND_COLORS = {
+  'Standout':'#10b981','Job-Ready':'#3b82f6','Developing':'#f59e0b','Not Ready':'#ef4444'
+};
+
+let readinessChart=null, confidenceChart=null, skillChart=null, gapChart=null;
+
+async function fetchNames(){
+  try{
+    const r=await fetch('/api/progress');
+    const d=await r.json();
+    if(d.success && d.names && d.names.length>0){
+      const sel=document.getElementById('namePicker');
+      d.names.forEach(n=>{
+        const opt=document.createElement('option');
+        opt.value=n; opt.textContent=n;
+        sel.appendChild(opt);
+      });
+    }
+  }catch(e){console.error('fetchNames:',e);}
+}
+
+async function loadProgress(){
+  const name=document.getElementById('namePicker').value;
+  if(!name){alert('Please select a name first.');return;}
+  try{
+    const r=await fetch('/api/progress?name='+encodeURIComponent(name));
+    const d=await r.json();
+    if(!d.success){alert(d.error);return;}
+    if(!d.snapshots||d.snapshots.length===0){
+      document.getElementById('content').innerHTML=`
+        <div class="empty-state">
+          <div class="empty-icon">📭</div>
+          <div class="empty-title">No snapshots for "${name}"</div>
+          <div class="empty-sub">Run a prediction, enter this name, and click "Save to Progress Tracker" to start logging.</div>
+        </div>`;
+      return;
+    }
+    renderProgress(d.snapshots);
+  }catch(e){alert('Error: '+e.message);}
+}
+
+function renderProgress(snaps){
+  const latest=snaps[snaps.length-1], first=snaps[0];
+  const prev=snaps.length>=2?snaps[snaps.length-2]:null;
+
+  // Deltas
+  const rdelta=prev?latest.readiness_score-prev.readiness_score:0;
+  const cdelta=prev?latest.confidence-prev.confidence:0;
+  const gdelta=prev?latest.skill_gap_pct-prev.skill_gap_pct:0;
+
+  function deltaHTML(val,suffix=''){
+    if(val===0) return '<span class="stat-delta delta-same">— No change</span>';
+    const up=val>0;
+    return `<span class="stat-delta ${up?'delta-up':'delta-down'}">${up?'▲':'▼'} ${up?'+':''}${val.toFixed(1)}${suffix}</span>`;
+  }
+
+  let html=`
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-label">Readiness Score</div>
+      <div class="stat-value" style="color:${BAND_COLORS[latest.readiness_band]||'var(--ac)'}">${latest.readiness_score}</div>
+      <div class="stat-sub">${latest.readiness_band}</div>
+      ${snaps.length>=2?deltaHTML(rdelta):''}
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Confidence</div>
+      <div class="stat-value" style="color:var(--ac)">${latest.confidence}%</div>
+      <div class="stat-sub">${latest.top_role}</div>
+      ${snaps.length>=2?deltaHTML(cdelta,'%'):''}
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Skill Match</div>
+      <div class="stat-value" style="color:var(--ac2)">${latest.skill_gap_pct}%</div>
+      <div class="stat-sub">Profile match</div>
+      ${snaps.length>=2?deltaHTML(gdelta,'%'):''}
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Snapshots</div>
+      <div class="stat-value" style="color:var(--ac3)">${snaps.length}</div>
+      <div class="stat-sub">Since ${first.date}</div>
+    </div>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h3>🏆 Readiness Score Over Time</h3>
+      <div class="chart-sub">Your career readiness trend</div>
+      <div class="chart-wrap"><canvas id="readinessChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <h3>🎯 Prediction Confidence</h3>
+      <div class="chart-sub">Model confidence % per snapshot</div>
+      <div class="chart-wrap"><canvas id="confidenceChart"></canvas></div>
+    </div>
+    <div class="chart-card full">
+      <h3>⚡ Skill Evolution</h3>
+      <div class="chart-sub">How your top skills changed over time</div>
+      <div class="chart-wrap" style="height:320px"><canvas id="skillChart"></canvas></div>
+    </div>
+    <div class="chart-card full">
+      <h3>📊 Skill Match & Gap Trend</h3>
+      <div class="chart-sub">Profile match % and readiness score together</div>
+      <div class="chart-wrap"><canvas id="gapChart"></canvas></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <h3>📜 Snapshot Timeline</h3>
+    <div class="tl" id="timeline"></div>
+  </div>`;
+
+  document.getElementById('content').innerHTML=html;
+
+  // Labels for x-axis
+  const labels=snaps.map((s,i)=>{
+    if(snaps.length<=6) return s.date+' '+s.time;
+    return s.date;
+  });
+
+  const chartFont={family:"'DM Sans', sans-serif"};
+  const gridColor='rgba(255,255,255,0.04)';
+  const lightMode=document.documentElement.getAttribute('data-theme')==='light';
+  const tickColor=lightMode?'#5a6270':'#7d8997';
+
+  const commonOpts={
+    responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{ticks:{color:tickColor,font:{size:10,family:chartFont.family},maxRotation:45},grid:{color:gridColor}},
+      y:{ticks:{color:tickColor,font:{size:10,family:chartFont.family}},grid:{color:gridColor}}
+    }
+  };
+
+  // Readiness chart
+  if(readinessChart)readinessChart.destroy();
+  readinessChart=new Chart(document.getElementById('readinessChart'),{
+    type:'line',
+    data:{
+      labels:labels,
+      datasets:[{
+        label:'Readiness',
+        data:snaps.map(s=>s.readiness_score),
+        borderColor:'#10b981',backgroundColor:'rgba(16,185,129,0.1)',
+        fill:true,tension:0.4,pointRadius:5,pointHoverRadius:8,
+        pointBackgroundColor:snaps.map(s=>BAND_COLORS[s.readiness_band]||'#10b981'),
+        borderWidth:2.5,
+      }]
+    },
+    options:{...commonOpts,scales:{...commonOpts.scales,y:{...commonOpts.scales.y,min:0,max:100}}}
+  });
+
+  // Confidence chart
+  if(confidenceChart)confidenceChart.destroy();
+  confidenceChart=new Chart(document.getElementById('confidenceChart'),{
+    type:'bar',
+    data:{
+      labels:labels,
+      datasets:[{
+        label:'Confidence %',
+        data:snaps.map(s=>s.confidence),
+        backgroundColor:snaps.map((_,i)=>{
+          const colors=['rgba(79,142,247,0.6)','rgba(168,85,247,0.6)','rgba(6,214,160,0.6)','rgba(245,158,11,0.6)'];
+          return colors[i%colors.length];
+        }),
+        borderRadius:6,borderSkipped:false,barPercentage:0.65,
+      }]
+    },
+    options:{...commonOpts,scales:{...commonOpts.scales,y:{...commonOpts.scales.y,min:0,max:100}}}
+  });
+
+  // Skill evolution chart — pick top 5 skills from latest snapshot
+  const latestSkills=latest.skills||{};
+  const topSkills=Object.entries(latestSkills)
+    .filter(([k])=>SKILL_LABELS[k])
+    .sort((a,b)=>b[1]-a[1])
+    .slice(0,5);
+  const skillColors=['#4f8ef7','#a855f7','#10b981','#f59e0b','#ef4444'];
+
+  if(skillChart)skillChart.destroy();
+  skillChart=new Chart(document.getElementById('skillChart'),{
+    type:'line',
+    data:{
+      labels:labels,
+      datasets:topSkills.map(([key],i)=>({
+        label:SKILL_LABELS[key]||key,
+        data:snaps.map(s=>(s.skills||{})[key]||0),
+        borderColor:skillColors[i],backgroundColor:skillColors[i]+'22',
+        fill:false,tension:0.35,pointRadius:4,pointHoverRadius:7,borderWidth:2,
+      }))
+    },
+    options:{
+      ...commonOpts,
+      plugins:{legend:{display:true,labels:{color:tickColor,font:{size:11,family:chartFont.family},boxWidth:12,padding:14}}},
+      scales:{...commonOpts.scales,y:{...commonOpts.scales.y,min:0,max:10}}
+    }
+  });
+
+  // Gap + Readiness trend
+  if(gapChart)gapChart.destroy();
+  gapChart=new Chart(document.getElementById('gapChart'),{
+    type:'line',
+    data:{
+      labels:labels,
+      datasets:[
+        {label:'Skill Match %',data:snaps.map(s=>s.skill_gap_pct),borderColor:'#a855f7',backgroundColor:'rgba(168,85,247,0.08)',fill:true,tension:0.4,pointRadius:4,borderWidth:2},
+        {label:'Readiness Score',data:snaps.map(s=>s.readiness_score),borderColor:'#10b981',backgroundColor:'rgba(16,185,129,0.08)',fill:true,tension:0.4,pointRadius:4,borderWidth:2},
+      ]
+    },
+    options:{
+      ...commonOpts,
+      plugins:{legend:{display:true,labels:{color:tickColor,font:{size:11,family:chartFont.family},boxWidth:12,padding:14}}},
+      scales:{...commonOpts.scales,y:{...commonOpts.scales.y,min:0,max:100}}
+    }
+  });
+
+  // Timeline
+  const tlEl=document.getElementById('timeline');
+  tlEl.innerHTML=snaps.slice().reverse().map((s,i)=>{
+    const bc=BAND_COLORS[s.readiness_band]||'var(--ac)';
+    const topSkillPills=Object.entries(s.skills||{})
+      .filter(([k])=>SKILL_LABELS[k])
+      .sort((a,b)=>b[1]-a[1])
+      .slice(0,4)
+      .map(([k,v])=>`<span class="tl-skill">${SKILL_LABELS[k]}: ${v}</span>`)
+      .join('');
+    return `<div class="tl-item" style="animation-delay:${i*0.06}s">
+      <div class="tl-dot" style="border-color:${bc}"><div class="tl-dot-inner" style="background:${bc}"></div></div>
+      <div class="tl-card">
+        <div class="tl-top">
+          <div class="tl-role">${s.top_role}</div>
+          <div class="tl-conf" style="color:${bc}">${s.readiness_score}/100</div>
+        </div>
+        <div class="tl-meta">
+          <span class="tl-badge" style="background:${bc}22;color:${bc}">${s.readiness_band}</span>
+          <span class="tl-badge" style="background:rgba(79,142,247,0.1);color:var(--ac)">${s.confidence}% conf.</span>
+          <span class="tl-badge" style="background:rgba(168,85,247,0.1);color:var(--ac2)">${s.skill_gap_pct}% match</span>
+          <span class="tl-time">${s.date} ${s.time}</span>
+        </div>
+        ${topSkillPills?`<div class="tl-skills">${topSkillPills}</div>`:''}
+      </div>
+    </div>`;
+  }).join('');
+}
+</script>
+</body>
+</html>

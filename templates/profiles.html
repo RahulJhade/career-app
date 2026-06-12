@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>CareerAI — Saved Profiles</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#050811;--surface:#0d1117;--surface2:#161b22;--surface3:#1e2631;--border:rgba(255,255,255,0.07);--text:#e8edf5;--muted:#7d8997;--accent:#4f8ef7;--accent2:#a855f7;--accent3:#06d6a0;--danger:#ef4444;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);}
+.bg-grid{position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(79,142,247,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(79,142,247,0.03) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;}
+.wrapper{position:relative;z-index:1;}
+header{padding:18px 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);backdrop-filter:blur(10px);background:rgba(5,8,17,0.8);position:sticky;top:0;z-index:100;}
+.logo{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.nav-links{display:flex;gap:8px;}
+.nav-btn{background:var(--surface2);border:1px solid var(--border);color:var(--muted);padding:7px 14px;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;cursor:pointer;text-decoration:none;transition:all 0.2s;}
+.nav-btn:hover{color:var(--text);}
+.nav-btn.active{color:var(--accent2);border-color:rgba(168,85,247,0.4);background:rgba(168,85,247,0.08);}
+main{max-width:1100px;margin:0 auto;padding:36px 48px 80px;}
+h2{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;letter-spacing:-1px;margin-bottom:4px;}
+.page-sub{color:var(--muted);font-size:13px;margin-bottom:28px;}
+@keyframes slideUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+.profiles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;}
+.profile-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px 22px;cursor:pointer;transition:all 0.2s;animation:slideUp 0.3s ease both;}
+.profile-card:hover{border-color:rgba(79,142,247,0.3);transform:translateY(-2px);}
+.profile-ts{font-size:11px;color:var(--muted);margin-bottom:8px;}
+.profile-name{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:4px;letter-spacing:-0.3px;}
+.profile-role{font-size:13px;color:var(--accent);margin-bottom:10px;}
+.profile-conf{display:inline-block;background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--accent);padding:3px 10px;border-radius:99px;font-size:11px;font-weight:700;}
+.profile-actions{display:flex;gap:8px;margin-top:14px;}
+.btn-load{background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;border:none;padding:8px 18px;border-radius:8px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s;}
+.btn-load:hover{opacity:0.9;}
+
+.empty-state{text-align:center;padding:80px 40px;color:var(--muted);}
+.empty-icon{font-size:48px;margin-bottom:16px;}
+.empty-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;margin-bottom:8px;color:var(--text);}
+
+/* Toast */
+#toast{position:fixed;bottom:24px;right:24px;background:var(--surface2);border:1px solid rgba(6,214,160,0.3);color:var(--accent3);padding:12px 20px;border-radius:10px;font-size:13px;font-weight:600;display:none;z-index:999;animation:fadeIn 0.3s ease;}
+
+footer{border-top:1px solid var(--border);padding:24px 48px;text-align:center;color:var(--muted);font-size:12px;}
+@media(max-width:768px){main,header,footer{padding-left:16px;padding-right:16px;}}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div id="toast">✓ Profile loaded into form!</div>
+<div class="wrapper">
+<header>
+  <div class="logo">CareerAI ✦</div>
+  <nav class="nav-links">
+    <a class="nav-btn" href="/">🎯 Predict</a>
+    <a class="nav-btn" href="/dashboard">📊 Analytics</a>
+    <a class="nav-btn active" href="/profiles">👤 Profiles</a>
+    <a class="nav-btn" href="/admin">🔴 Admin</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Saved Profiles</h2>
+  <p class="page-sub">Previously saved student profiles. Load any to re-run the prediction with updated values.</p>
+  <div class="profiles-grid" id="profilesGrid">
+    <div class="empty-state" style="grid-column:1/-1">
+      <div class="empty-icon">⏳</div>
+      <div class="empty-title">Loading profiles...</div>
+    </div>
+  </div>
+</main>
+<footer>CareerAI · B.Tech Final Year Capstone Project</footer>
+</div>
+
+<script>
+async function loadProfiles() {
+  const grid = document.getElementById('profilesGrid');
+  try {
+    const r = await fetch('/get_profiles');
+    const d = await r.json();
+    if (!d.success || !d.profiles.length) {
+      grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
+        <div class="empty-icon">📭</div>
+        <div class="empty-title">No saved profiles yet</div>
+        <p style="font-size:13px;margin-top:8px">After predicting, click "Save Profile" to store a student profile here.</p>
+      </div>`;
+      return;
+    }
+    grid.innerHTML = d.profiles.map((p, i) => `
+      <div class="profile-card" style="animation-delay:${i*0.05}s">
+        <div class="profile-ts">🕐 ${p.ts}</div>
+        <div class="profile-name">${p.name}</div>
+        <div class="profile-role">${p.top_role || '—'}</div>
+        ${p.confidence ? `<span class="profile-conf">${p.confidence}% confidence</span>` : ''}
+        <div class="profile-actions">
+          <button class="btn-load" onclick="loadProfile(${JSON.stringify(JSON.stringify(p.profile))})">📂 Load & Re-predict</button>
+        </div>
+      </div>`).join('');
+  } catch(e) {
+    grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
+      <div class="empty-title">Error loading profiles</div><p>${e.message}</p></div>`;
+  }
+}
+
+function loadProfile(profileJson) {
+  // Store in sessionStorage so the main page can read it
+  sessionStorage.setItem('loadedProfile', profileJson);
+  showToast();
+  setTimeout(() => window.location.href = '/?load=1', 800);
+}
+
+function showToast() {
+  const t = document.getElementById('toast');
+  t.style.display = 'block';
+  setTimeout(() => t.style.display = 'none', 2000);
+}
+
+loadProfiles();
+</script>
+</body>
+</html>

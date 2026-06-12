@@ -1,0 +1,106 @@
+{
+  "global_top": [
+    {
+      "feature": "embedded_composite",
+      "gain": 50703.39,
+      "split": 2875
+    },
+    {
+      "feature": "uiux_alignment",
+      "gain": 38668.24,
+      "split": 4133
+    },
+    {
+      "feature": "web_dev_skill",
+      "gain": 34502.31,
+      "split": 4710
+    },
+    {
+      "feature": "cloud_arch_patterns_score",
+      "gain": 29091.42,
+      "split": 4440
+    },
+    {
+      "feature": "cloud_alignment",
+      "gain": 28247.13,
+      "split": 3150
+    },
+    {
+      "feature": "communication_skill",
+      "gain": 27852.85,
+      "split": 6132
+    },
+    {
+      "feature": "pentest_focused",
+      "gain": 25616.28,
+      "split": 1200
+    },
+    {
+      "feature": "data_composite",
+      "gain": 25368.22,
+      "split": 2705
+    },
+    {
+      "feature": "data_science_alignment",
+      "gain": 22977.77,
+      "split": 3955
+    },
+    {
+      "feature": "system_design_score",
+      "gain": 22662.57,
+      "split": 5503
+    },
+    {
+      "feature": "compliance_frameworks_known_count",
+      "gain": 21502.93,
+      "split": 972
+    },
+    {
+      "feature": "siem_experience_score",
+      "gain": 20210.23,
+      "split": 3794
+    },
+    {
+      "feature": "qa_testing_skill",
+      "gain": 18437.31,
+      "split": 3732
+    },
+    {
+      "feature": "prog_alignment",
+      "gain": 18132.08,
+      "split": 3071
+    },
+    {
+      "feature": "data_analytics_alignment",
+      "gain": 17386.85,
+      "split": 2430
+    },
+    {
+      "feature": "api_design_skill",
+      "gain": 15489.76,
+      "split": 3971
+    },
+    {
+      "feature": "biz_alignment",
+      "gain": 15272.05,
+      "split": 3328
+    },
+    {
+      "feature": "project_cloud_ops",
+      "gain": 14983.9,
+      "split": 2102
+    },
+    {
+      "feature": "mobile_dev_skill",
+      "gain": 13385.9,
+      "split": 3718
+    },
+    {
+      "feature": "projects_fullstack",
+      "gain": 12295.1,
+      "split": 1115
+    }
+  ],
+  "n_features": 126,
+  "n_classes": 30
+}

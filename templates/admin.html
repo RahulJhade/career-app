@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>CareerAI — Admin Panel</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+:root{--bg:#050811;--surface:#0d1117;--surface2:#161b22;--surface3:#1e2631;--border:rgba(255,255,255,0.07);--text:#e8edf5;--muted:#7d8997;--accent:#4f8ef7;--accent2:#a855f7;--accent3:#06d6a0;--danger:#ef4444;--warning:#f59e0b;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+.bg-grid{position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(79,142,247,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(79,142,247,0.03) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;}
+.wrapper{position:relative;z-index:1;}
+header{padding:18px 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);backdrop-filter:blur(10px);background:rgba(5,8,17,0.8);position:sticky;top:0;z-index:100;}
+.logo{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.nav-links{display:flex;gap:8px;}
+.nav-btn{background:var(--surface2);border:1px solid var(--border);color:var(--muted);padding:7px 14px;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;cursor:pointer;text-decoration:none;transition:all 0.2s;}
+.nav-btn:hover{color:var(--text);}
+.nav-btn.active{color:var(--danger);border-color:rgba(239,68,68,0.4);background:rgba(239,68,68,0.08);}
+main{max-width:1200px;margin:0 auto;padding:36px 48px 80px;}
+h2{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;letter-spacing:-1px;margin-bottom:4px;}
+.page-sub{color:var(--muted);font-size:13px;margin-bottom:28px;}
+
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px;}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 22px;}
+.kpi-val{font-family:'Syne',sans-serif;font-size:32px;font-weight:800;color:var(--accent);line-height:1;}
+.kpi-label{font-size:11px;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:0.7px;}
+
+.charts-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;}
+.chart-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 22px;}
+.chart-title{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;margin-bottom:14px;}
+.chart-wrap{height:200px;position:relative;}
+
+.logs-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:22px 24px;}
+.logs-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;}
+.live-dot{width:8px;height:8px;background:var(--accent3);border-radius:50%;display:inline-block;animation:pulse 2s infinite;margin-right:6px;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+
+table{width:100%;border-collapse:collapse;}
+th{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.7px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);font-weight:600;}
+td{padding:10px 12px;font-size:13px;border-bottom:1px solid rgba(255,255,255,0.03);}
+tr:hover td{background:var(--surface2);}
+.badge{display:inline-block;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:700;}
+.conf-high{background:rgba(16,185,129,0.15);color:#10b981;}
+.conf-med{background:rgba(79,142,247,0.15);color:#4f8ef7;}
+.conf-low{background:rgba(245,158,11,0.15);color:#f59e0b;}
+.empty-state{text-align:center;padding:60px;color:var(--muted);font-size:14px;}
+.refresh-btn{background:var(--surface2);border:1px solid var(--border);color:var(--muted);padding:7px 16px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:12px;transition:all 0.2s;}
+.refresh-btn:hover{color:var(--text);}
+footer{border-top:1px solid var(--border);padding:24px 48px;text-align:center;color:var(--muted);font-size:12px;}
+@media(max-width:768px){main,header,footer{padding-left:16px;padding-right:16px;}.kpi-row,.charts-row{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="wrapper">
+<header>
+  <div class="logo">CareerAI ✦</div>
+  <nav class="nav-links">
+    <a class="nav-btn" href="/">🎯 Predict</a>
+    <a class="nav-btn" href="/dashboard">📊 Analytics</a>
+    <a class="nav-btn" href="/profiles">👤 Profiles</a>
+    <a class="nav-btn active" href="/admin">🔴 Admin</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Admin Panel</h2>
+  <p class="page-sub">Live prediction logs, usage stats, and system overview.</p>
+
+  <!-- KPIs -->
+  <div class="kpi-row">
+    <div class="kpi">
+      <div class="kpi-val">{{ total }}</div>
+      <div class="kpi-label">Total Predictions</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-val">{{ domain_dist|length }}</div>
+      <div class="kpi-label">Domains Predicted</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-val">{{ top_roles[0].role.split('/')[0].split('&')[0].strip()[:14] if top_roles else '—' }}</div>
+      <div class="kpi-label">Most Predicted Role</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-val">{{ logs[0].ts.split(' ')[0] if logs else '—' }}</div>
+      <div class="kpi-label">Last Prediction</div>
+    </div>
+  </div>
+
+  <!-- Charts -->
+  {% if total > 0 %}
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-title">Predictions by Domain</div>
+      <div class="chart-wrap"><canvas id="domainChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Top 10 Predicted Roles</div>
+      <div class="chart-wrap"><canvas id="roleChart"></canvas></div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Logs table -->
+  <div class="logs-card">
+    <div class="logs-title">
+      <span><span class="live-dot"></span>Recent Predictions (last 50)</span>
+      <button class="refresh-btn" onclick="location.reload()">↻ Refresh</button>
+    </div>
+    {% if logs %}
+    <table>
+      <tr><th>Time</th><th>Student</th><th>Top Role</th><th>Domain</th><th>Confidence</th><th>Top 3</th></tr>
+      {% for log in logs %}
+      <tr>
+        <td style="color:var(--muted);font-size:12px">{{ log.ts }}</td>
+        <td><b>{{ log.name }}</b></td>
+        <td style="color:var(--accent)">{{ log.top_role }}</td>
+        <td style="font-size:12px;color:var(--muted)">{{ log.domain }}</td>
+        <td>
+          {% if log.confidence >= 70 %}
+            <span class="badge conf-high">{{ log.confidence }}%</span>
+          {% elif log.confidence >= 40 %}
+            <span class="badge conf-med">{{ log.confidence }}%</span>
+          {% else %}
+            <span class="badge conf-low">{{ log.confidence }}%</span>
+          {% endif %}
+        </td>
+        <td style="font-size:11px;color:var(--muted)">{{ log.top3 | join(' · ') }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <div class="empty-state">
+      No predictions yet.<br/>
+      <span style="font-size:12px;margin-top:8px;display:block">Run a prediction from the main page to see logs here.</span>
+    </div>
+    {% endif %}
+  </div>
+</main>
+<footer>CareerAI Admin Panel · B.Tech Final Year Capstone Project</footer>
+</div>
+
+{% if total > 0 %}
+<script>
+const DOMAIN_COLORS=['#4f8ef7','#a855f7','#ef4444','#06b6d4','#f59e0b','#10b981','#6366f1'];
+const dd = {{ domain_dist | tojson }};
+new Chart(document.getElementById('domainChart'),{
+  type:'doughnut',
+  data:{labels:dd.map(d=>d.domain),datasets:[{data:dd.map(d=>d.count),backgroundColor:DOMAIN_COLORS,borderWidth:2,borderColor:'#0d1117'}]},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{color:'#7d8997',font:{size:10},boxWidth:10,padding:6}}}}
+});
+const tr = {{ top_roles | tojson }};
+new Chart(document.getElementById('roleChart'),{
+  type:'bar',
+  data:{labels:tr.map(r=>r.role.length>20?r.role.slice(0,20)+'…':r.role),datasets:[{data:tr.map(r=>r.count),backgroundColor:'rgba(79,142,247,0.6)',borderColor:'#4f8ef7',borderWidth:1,borderRadius:4}]},
+  options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#7d8997',font:{size:10}},grid:{color:'rgba(255,255,255,0.04)'}},y:{ticks:{color:'#7d8997',font:{size:9}},grid:{display:false}}}}
+});
+</script>
+{% endif %}
+</body>
+</html>
